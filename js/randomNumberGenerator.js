@@ -6,6 +6,9 @@ function randomNumberGenerator(minimumNumber, maximumNumber) {
 	);
 }
 
+let numericNumber = document.getElementById("numericNumber");
+let letterNumber = document.getElementById("letterNumber");
+
 fetch("../data/data.json")
 	.then(function (response) {
 		return response.json();
@@ -19,6 +22,9 @@ fetch("../data/data.json")
 			e.preventDefault();
 
 			// Les valeurs dans le formulaire
+			let language = document.querySelector(
+				'input[name="language"]:checked'
+			).value;
 			let minimumNumber =
 				document.getElementById("minimumNumber").valueAsNumber;
 			let maximumNumber =
@@ -48,10 +54,18 @@ fetch("../data/data.json")
 				let randomNumber = randomNumberGenerator(minimumNumber, maximumNumber);
 
 				// Affichage du nombre aléatoire
-				document.getElementById("leftNumber").innerHTML =
-					data[randomNumber].digital_numbers;
-				document.getElementById("rightNumber").innerHTML =
-					data[randomNumber].korean_numbers;
+				numericNumber.innerHTML = data[randomNumber].digital_numbers;
+
+				// Vérification de la langue sélectionnée pour afficher le nombre dans la bonne langue
+				if (language === "Français") {
+					letterNumber.innerHTML = data[randomNumber].french_numbers;
+				} else if (language === "English") {
+					letterNumber.innerHTML = data[randomNumber].english_numbers;
+				} else if (language === "Korean") {
+					letterNumber.innerHTML = data[randomNumber].korean_numbers;
+				} else {
+					letterNumber.innerHTML = data[randomNumber].french_numbers;
+				}
 			}
 		});
 	})

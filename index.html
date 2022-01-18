@@ -10,11 +10,43 @@
 	<body>
 		<!-- Main -->
 		<main>
-			<h1>Générateur de nombre aléatoire</h1>
+			<h1>Random number generator with the word in letters</h1>
 
 			<form name="numberGenerator" id="numberGenerator" autocomplete="off">
+				<p>Select a language :</p>
 				<div>
-					<label for="minimumNumber">Nombre minimum :</label>
+					<input
+						type="radio"
+						name="language"
+						id="french"
+						value="Français"
+						required
+						checked
+					/>
+					<label for="french">Français</label>
+				</div>
+				<div>
+					<input
+						type="radio"
+						name="language"
+						id="english"
+						value="English"
+						required
+					/>
+					<label for="english">English</label>
+				</div>
+				<div>
+					<input
+						type="radio"
+						name="language"
+						id="korean"
+						value="Korean"
+						required
+					/>
+					<label for="korean">한국어 (Korean)</label>
+				</div>
+				<div>
+					<label for="minimumNumber">Minimum number :</label>
 					<input
 						type="number"
 						name="minimumNumber"
@@ -27,28 +59,28 @@
 					/>
 				</div>
 				<div>
-					<label for="maximumNumber">Nombre maximum :</label>
+					<label for="maximumNumber">Maximum number :</label>
 					<input
 						type="number"
 						name="maximumNumber"
 						id="maximumNumber"
-						value="3"
+						value="99"
 						min="0"
 						max="99"
 						required
 						onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))"
 					/>
 				</div>
-				<button type="submit">Générer</button>
+				<button type="submit">Generate</button>
 			</form>
 
 			<div style="text-align: center">
 				<span
-					id="leftNumber"
+					id="numericNumber"
 					style="font-size: 50px; margin-right: 15px"
 				></span>
 				<span
-					id="rightNumber"
+					id="letterNumber"
 					style="font-size: 50px; margin-left: 15px"
 				></span>
 			</div>
