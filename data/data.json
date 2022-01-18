@@ -1,602 +1,702 @@
 [
     {
-        "nombre_numerique": "0",
-        "nombre_francais": "zéro",
-        "nombre_coreen": "영/공",
-        "nombre_sino_coreen": ""
+        "digital_numbers": "0",
+        "french_numbers": "zéro",
+        "english_numbers": "zero",
+        "korean_numbers": "영/공",
+        "sino_korean_numbers": ""
     },
     {
-        "nombre_numerique": "1",
-        "nombre_francais": "un",
-        "nombre_coreen": "하나",
-        "nombre_sino_coreen": "일"
+        "digital_numbers": "1",
+        "french_numbers": "un",
+        "english_numbers": "one",
+        "korean_numbers": "하나",
+        "sino_korean_numbers": "일"
     },
     {
-        "nombre_numerique": "2",
-        "nombre_francais": "deux",
-        "nombre_coreen": "둘",
-        "nombre_sino_coreen": "이"
+        "digital_numbers": "2",
+        "french_numbers": "deux",
+        "english_numbers": "two",
+        "korean_numbers": "둘",
+        "sino_korean_numbers": "이"
     },
     {
-        "nombre_numerique": "3",
-        "nombre_francais": "trois",
-        "nombre_coreen": "셋",
-        "nombre_sino_coreen": "삼"
+        "digital_numbers": "3",
+        "french_numbers": "trois",
+        "english_numbers": "three",
+        "korean_numbers": "셋",
+        "sino_korean_numbers": "삼"
     },
     {
-        "nombre_numerique": "4",
-        "nombre_francais": "quatre",
-        "nombre_coreen": "넷",
-        "nombre_sino_coreen": "사"
+        "digital_numbers": "4",
+        "french_numbers": "quatre",
+        "english_numbers": "four",
+        "korean_numbers": "넷",
+        "sino_korean_numbers": "사"
     },
     {
-        "nombre_numerique": "5",
-        "nombre_francais": "cinq",
-        "nombre_coreen": "다섯",
-        "nombre_sino_coreen": "오"
+        "digital_numbers": "5",
+        "french_numbers": "cinq",
+        "english_numbers": "five",
+        "korean_numbers": "다섯",
+        "sino_korean_numbers": "오"
     },
     {
-        "nombre_numerique": "6",
-        "nombre_francais": "six",
-        "nombre_coreen": "여섯",
-        "nombre_sino_coreen": "육"
+        "digital_numbers": "6",
+        "french_numbers": "six",
+        "english_numbers": "six",
+        "korean_numbers": "여섯",
+        "sino_korean_numbers": "육"
     },
     {
-        "nombre_numerique": "7",
-        "nombre_francais": "sept",
-        "nombre_coreen": "일곱",
-        "nombre_sino_coreen": "칠"
+        "digital_numbers": "7",
+        "french_numbers": "sept",
+        "english_numbers": "seven",
+        "korean_numbers": "일곱",
+        "sino_korean_numbers": "칠"
     },
     {
-        "nombre_numerique": "8",
-        "nombre_francais": "huit",
-        "nombre_coreen": "여덟",
-        "nombre_sino_coreen": "팔"
+        "digital_numbers": "8",
+        "french_numbers": "huit",
+        "english_numbers": "eight",
+        "korean_numbers": "여덟",
+        "sino_korean_numbers": "팔"
     },
     {
-        "nombre_numerique": "9",
-        "nombre_francais": "neuf",
-        "nombre_coreen": "아홉",
-        "nombre_sino_coreen": "구"
+        "digital_numbers": "9",
+        "french_numbers": "neuf",
+        "english_numbers": "nine",
+        "korean_numbers": "아홉",
+        "sino_korean_numbers": "구"
     },
     {
-        "nombre_numerique": "10",
-        "nombre_francais": "dix",
-        "nombre_coreen": "열",
-        "nombre_sino_coreen": "십"
+        "digital_numbers": "10",
+        "french_numbers": "dix",
+        "english_numbers": "ten",
+        "korean_numbers": "열",
+        "sino_korean_numbers": "십"
     },
     {
-        "nombre_numerique": "11",
-        "nombre_francais": "onze",
-        "nombre_coreen": "열하나",
-        "nombre_sino_coreen": "십일"
+        "digital_numbers": "11",
+        "french_numbers": "onze",
+        "english_numbers": "eleven",
+        "korean_numbers": "열하나",
+        "sino_korean_numbers": "십일"
     },
     {
-        "nombre_numerique": "12",
-        "nombre_francais": "douze",
-        "nombre_coreen": "열둘",
-        "nombre_sino_coreen": "십이"
+        "digital_numbers": "12",
+        "french_numbers": "douze",
+        "english_numbers": "twelve",
+        "korean_numbers": "열둘",
+        "sino_korean_numbers": "십이"
     },
     {
-        "nombre_numerique": "13",
-        "nombre_francais": "treize",
-        "nombre_coreen": "열셋",
-        "nombre_sino_coreen": "십삼"
+        "digital_numbers": "13",
+        "french_numbers": "treize",
+        "english_numbers": "thirteen",
+        "korean_numbers": "열셋",
+        "sino_korean_numbers": "십삼"
     },
     {
-        "nombre_numerique": "14",
-        "nombre_francais": "quatorze",
-        "nombre_coreen": "열넷",
-        "nombre_sino_coreen": "십사"
+        "digital_numbers": "14",
+        "french_numbers": "quatorze",
+        "english_numbers": "fourteen",
+        "korean_numbers": "열넷",
+        "sino_korean_numbers": "십사"
     },
     {
-        "nombre_numerique": "15",
-        "nombre_francais": "quinze",
-        "nombre_coreen": "열다섯",
-        "nombre_sino_coreen": "십오"
+        "digital_numbers": "15",
+        "french_numbers": "quinze",
+        "english_numbers": "fifteen",
+        "korean_numbers": "열다섯",
+        "sino_korean_numbers": "십오"
     },
     {
-        "nombre_numerique": "16",
-        "nombre_francais": "seize",
-        "nombre_coreen": "열여섯",
-        "nombre_sino_coreen": "십육"
+        "digital_numbers": "16",
+        "french_numbers": "seize",
+        "english_numbers": "sixteen",
+        "korean_numbers": "열여섯",
+        "sino_korean_numbers": "십육"
     },
     {
-        "nombre_numerique": "17",
-        "nombre_francais": "dix-sept",
-        "nombre_coreen": "열일곱",
-        "nombre_sino_coreen": "십칠"
+        "digital_numbers": "17",
+        "french_numbers": "dix-sept",
+        "english_numbers": "seventeen",
+        "korean_numbers": "열일곱",
+        "sino_korean_numbers": "십칠"
     },
     {
-        "nombre_numerique": "18",
-        "nombre_francais": "dix-huit",
-        "nombre_coreen": "열여덟",
-        "nombre_sino_coreen": "십팔"
+        "digital_numbers": "18",
+        "french_numbers": "dix-huit",
+        "english_numbers": "eighteen",
+        "korean_numbers": "열여덟",
+        "sino_korean_numbers": "십팔"
     },
     {
-        "nombre_numerique": "19",
-        "nombre_francais": "dix-neuf",
-        "nombre_coreen": "열아홉",
-        "nombre_sino_coreen": "십구"
+        "digital_numbers": "19",
+        "french_numbers": "dix-neuf",
+        "english_numbers": "nineteen",
+        "korean_numbers": "열아홉",
+        "sino_korean_numbers": "십구"
     },
     {
-        "nombre_numerique": "20",
-        "nombre_francais": "vingt",
-        "nombre_coreen": "스물",
-        "nombre_sino_coreen": "이십"
+        "digital_numbers": "20",
+        "french_numbers": "vingt",
+        "english_numbers": "twenty",
+        "korean_numbers": "스물",
+        "sino_korean_numbers": "이십"
     },
     {
-        "nombre_numerique": "21",
-        "nombre_francais": "vingt et un",
-        "nombre_coreen": "스물하나",
-        "nombre_sino_coreen": "이십일"
+        "digital_numbers": "21",
+        "french_numbers": "vingt et un",
+        "english_numbers": "twenty-one",
+        "korean_numbers": "스물하나",
+        "sino_korean_numbers": "이십일"
     },
     {
-        "nombre_numerique": "22",
-        "nombre_francais": "vingt-deux",
-        "nombre_coreen": "스물둘",
-        "nombre_sino_coreen": "이십이"
+        "digital_numbers": "22",
+        "french_numbers": "vingt-deux",
+        "english_numbers": "twenty-two",
+        "korean_numbers": "스물둘",
+        "sino_korean_numbers": "이십이"
     },
     {
-        "nombre_numerique": "23",
-        "nombre_francais": "vingt-trois",
-        "nombre_coreen": "스물셋",
-        "nombre_sino_coreen": "이십삼"
+        "digital_numbers": "23",
+        "french_numbers": "vingt-trois",
+        "english_numbers": "twenty-three",
+        "korean_numbers": "스물셋",
+        "sino_korean_numbers": "이십삼"
     },
     {
-        "nombre_numerique": "24",
-        "nombre_francais": "vingt-quatre",
-        "nombre_coreen": "스물넷",
-        "nombre_sino_coreen": "이십사"
+        "digital_numbers": "24",
+        "french_numbers": "vingt-quatre",
+        "english_numbers": "twenty-four",
+        "korean_numbers": "스물넷",
+        "sino_korean_numbers": "이십사"
     },
     {
-        "nombre_numerique": "25",
-        "nombre_francais": "vingt-cinq",
-        "nombre_coreen": "스물다섯",
-        "nombre_sino_coreen": "이십오"
+        "digital_numbers": "25",
+        "french_numbers": "vingt-cinq",
+        "english_numbers": "twenty-five",
+        "korean_numbers": "스물다섯",
+        "sino_korean_numbers": "이십오"
     },
     {
-        "nombre_numerique": "26",
-        "nombre_francais": "vingt-six",
-        "nombre_coreen": "스물여섯",
-        "nombre_sino_coreen": "이십육"
+        "digital_numbers": "26",
+        "french_numbers": "vingt-six",
+        "english_numbers": "twenty-six",
+        "korean_numbers": "스물여섯",
+        "sino_korean_numbers": "이십육"
     },
     {
-        "nombre_numerique": "27",
-        "nombre_francais": "vingt-sept",
-        "nombre_coreen": "스물일곱",
-        "nombre_sino_coreen": "이십칠"
+        "digital_numbers": "27",
+        "french_numbers": "vingt-sept",
+        "english_numbers": "twenty-seven",
+        "korean_numbers": "스물일곱",
+        "sino_korean_numbers": "이십칠"
     },
     {
-        "nombre_numerique": "28",
-        "nombre_francais": "vingt-huit",
-        "nombre_coreen": "스물여덟",
-        "nombre_sino_coreen": "이십"
+        "digital_numbers": "28",
+        "french_numbers": "vingt-huit",
+        "english_numbers": "twenty-eight",
+        "korean_numbers": "스물여덟",
+        "sino_korean_numbers": "이십"
     },
     {
-        "nombre_numerique": "29",
-        "nombre_francais": "vingt-neuf",
-        "nombre_coreen": "스물아홉",
-        "nombre_sino_coreen": "이십구"
+        "digital_numbers": "29",
+        "french_numbers": "vingt-neuf",
+        "english_numbers": "twenty-nine",
+        "korean_numbers": "스물아홉",
+        "sino_korean_numbers": "이십구"
     },
     {
-        "nombre_numerique": "30",
-        "nombre_francais": "trente",
-        "nombre_coreen": "서른",
-        "nombre_sino_coreen": "삼십"
+        "digital_numbers": "30",
+        "french_numbers": "trente",
+        "english_numbers": "thirty",
+        "korean_numbers": "서른",
+        "sino_korean_numbers": "삼십"
     },
     {
-        "nombre_numerique": "31",
-        "nombre_francais": "trente et un",
-        "nombre_coreen": "서른하나",
-        "nombre_sino_coreen": "삼십일"
+        "digital_numbers": "31",
+        "french_numbers": "trente et un",
+        "english_numbers": "thirty-one",
+        "korean_numbers": "서른하나",
+        "sino_korean_numbers": "삼십일"
     },
     {
-        "nombre_numerique": "32",
-        "nombre_francais": "trente-deux",
-        "nombre_coreen": "서른둘",
-        "nombre_sino_coreen": "삼십이"
+        "digital_numbers": "32",
+        "french_numbers": "trente-deux",
+        "english_numbers": "thirty-two",
+        "korean_numbers": "서른둘",
+        "sino_korean_numbers": "삼십이"
     },
     {
-        "nombre_numerique": "33",
-        "nombre_francais": "trente-trois",
-        "nombre_coreen": "서른셋",
-        "nombre_sino_coreen": "삼십삼"
+        "digital_numbers": "33",
+        "french_numbers": "trente-trois",
+        "english_numbers": "thirty-three",
+        "korean_numbers": "서른셋",
+        "sino_korean_numbers": "삼십삼"
     },
     {
-        "nombre_numerique": "34",
-        "nombre_francais": "trente-quatre",
-        "nombre_coreen": "서른넷",
-        "nombre_sino_coreen": "삼십사"
+        "digital_numbers": "34",
+        "french_numbers": "trente-quatre",
+        "english_numbers": "thirty-four",
+        "korean_numbers": "서른넷",
+        "sino_korean_numbers": "삼십사"
     },
     {
-        "nombre_numerique": "35",
-        "nombre_francais": "trente-cinq",
-        "nombre_coreen": "서른다섯",
-        "nombre_sino_coreen": "삼십오"
+        "digital_numbers": "35",
+        "french_numbers": "trente-cinq",
+        "english_numbers": "thirty-five",
+        "korean_numbers": "서른다섯",
+        "sino_korean_numbers": "삼십오"
     },
     {
-        "nombre_numerique": "36",
-        "nombre_francais": "trente-six",
-        "nombre_coreen": "서른여섯",
-        "nombre_sino_coreen": "삼십육"
+        "digital_numbers": "36",
+        "french_numbers": "trente-six",
+        "english_numbers": "thirty-six",
+        "korean_numbers": "서른여섯",
+        "sino_korean_numbers": "삼십육"
     },
     {
-        "nombre_numerique": "37",
-        "nombre_francais": "trente-sept",
-        "nombre_coreen": "서른일곱",
-        "nombre_sino_coreen": "삼십칠"
+        "digital_numbers": "37",
+        "french_numbers": "trente-sept",
+        "english_numbers": "thirty-seven",
+        "korean_numbers": "서른일곱",
+        "sino_korean_numbers": "삼십칠"
     },
     {
-        "nombre_numerique": "38",
-        "nombre_francais": "trente-huit",
-        "nombre_coreen": "서른여덟",
-        "nombre_sino_coreen": "삼십팔"
+        "digital_numbers": "38",
+        "french_numbers": "trente-huit",
+        "english_numbers": "thirty-eight",
+        "korean_numbers": "서른여덟",
+        "sino_korean_numbers": "삼십팔"
     },
     {
-        "nombre_numerique": "39",
-        "nombre_francais": "trente-neuf",
-        "nombre_coreen": "서른아홉",
-        "nombre_sino_coreen": "삼십구"
+        "digital_numbers": "39",
+        "french_numbers": "trente-neuf",
+        "english_numbers": "thirty-nine",
+        "korean_numbers": "서른아홉",
+        "sino_korean_numbers": "삼십구"
     },
     {
-        "nombre_numerique": "40",
-        "nombre_francais": "quarante",
-        "nombre_coreen": "마흔",
-        "nombre_sino_coreen": "사십"
+        "digital_numbers": "40",
+        "french_numbers": "quarante",
+        "english_numbers": "forty",
+        "korean_numbers": "마흔",
+        "sino_korean_numbers": "사십"
     },
     {
-        "nombre_numerique": "41",
-        "nombre_francais": "quarante et un",
-        "nombre_coreen": "마흔하나",
-        "nombre_sino_coreen": "사십일"
+        "digital_numbers": "41",
+        "french_numbers": "quarante et un",
+        "english_numbers": "forty-one",
+        "korean_numbers": "마흔하나",
+        "sino_korean_numbers": "사십일"
     },
     {
-        "nombre_numerique": "42",
-        "nombre_francais": "quarante-deux",
-        "nombre_coreen": "마흔둘",
-        "nombre_sino_coreen": "사십이"
+        "digital_numbers": "42",
+        "french_numbers": "quarante-deux",
+        "english_numbers": "forty-two",
+        "korean_numbers": "마흔둘",
+        "sino_korean_numbers": "사십이"
     },
     {
-        "nombre_numerique": "43",
-        "nombre_francais": "quarante-trois",
-        "nombre_coreen": "마흔셋",
-        "nombre_sino_coreen": "사십삼"
+        "digital_numbers": "43",
+        "french_numbers": "quarante-trois",
+        "english_numbers": "forty-three",
+        "korean_numbers": "마흔셋",
+        "sino_korean_numbers": "사십삼"
     },
     {
-        "nombre_numerique": "44",
-        "nombre_francais": "quarante-quatre",
-        "nombre_coreen": "마흔넷",
-        "nombre_sino_coreen": "사십사"
+        "digital_numbers": "44",
+        "french_numbers": "quarante-quatre",
+        "english_numbers": "forty-four",
+        "korean_numbers": "마흔넷",
+        "sino_korean_numbers": "사십사"
     },
     {
-        "nombre_numerique": "45",
-        "nombre_francais": "quarante-cinq",
-        "nombre_coreen": "마흔다섯",
-        "nombre_sino_coreen": "사십오"
+        "digital_numbers": "45",
+        "french_numbers": "quarante-cinq",
+        "english_numbers": "forty-five",
+        "korean_numbers": "마흔다섯",
+        "sino_korean_numbers": "사십오"
     },
     {
-        "nombre_numerique": "46",
-        "nombre_francais": "quarante-six",
-        "nombre_coreen": "마흔여섯",
-        "nombre_sino_coreen": "사십육"
+        "digital_numbers": "46",
+        "french_numbers": "quarante-six",
+        "english_numbers": "forty-six",
+        "korean_numbers": "마흔여섯",
+        "sino_korean_numbers": "사십육"
     },
     {
-        "nombre_numerique": "47",
-        "nombre_francais": "quarante-sept",
-        "nombre_coreen": "마흔일곱",
-        "nombre_sino_coreen": "사십칠"
+        "digital_numbers": "47",
+        "french_numbers": "quarante-sept",
+        "english_numbers": "forty-seven",
+        "korean_numbers": "마흔일곱",
+        "sino_korean_numbers": "사십칠"
     },
     {
-        "nombre_numerique": "48",
-        "nombre_francais": "quarante-huit",
-        "nombre_coreen": "마흔여덟",
-        "nombre_sino_coreen": "사십팔"
+        "digital_numbers": "48",
+        "french_numbers": "quarante-huit",
+        "english_numbers": "forty-eight",
+        "korean_numbers": "마흔여덟",
+        "sino_korean_numbers": "사십팔"
     },
     {
-        "nombre_numerique": "49",
-        "nombre_francais": "quarante-neuf",
-        "nombre_coreen": "마흔아홉",
-        "nombre_sino_coreen": "사십구"
+        "digital_numbers": "49",
+        "french_numbers": "quarante-neuf",
+        "english_numbers": "forty-nine",
+        "korean_numbers": "마흔아홉",
+        "sino_korean_numbers": "사십구"
     },
     {
-        "nombre_numerique": "50",
-        "nombre_francais": "cinquante",
-        "nombre_coreen": "쉰",
-        "nombre_sino_coreen": "오십"
+        "digital_numbers": "50",
+        "french_numbers": "cinquante",
+        "english_numbers": "fifty",
+        "korean_numbers": "쉰",
+        "sino_korean_numbers": "오십"
     },
     {
-        "nombre_numerique": "51",
-        "nombre_francais": "cinquante et un",
-        "nombre_coreen": "쉰하나",
-        "nombre_sino_coreen": "오십일"
+        "digital_numbers": "51",
+        "french_numbers": "cinquante et un",
+        "english_numbers": "fifty-one",
+        "korean_numbers": "쉰하나",
+        "sino_korean_numbers": "오십일"
     },
     {
-        "nombre_numerique": "52",
-        "nombre_francais": "cinquante-deux",
-        "nombre_coreen": "쉰둘",
-        "nombre_sino_coreen": "오십이"
+        "digital_numbers": "52",
+        "french_numbers": "cinquante-deux",
+        "english_numbers": "fifty-two",
+        "korean_numbers": "쉰둘",
+        "sino_korean_numbers": "오십이"
     },
     {
-        "nombre_numerique": "53",
-        "nombre_francais": "cinquante-trois",
-        "nombre_coreen": "쉰셋",
-        "nombre_sino_coreen": "오십삼"
+        "digital_numbers": "53",
+        "french_numbers": "cinquante-trois",
+        "english_numbers": "fifty-three",
+        "korean_numbers": "쉰셋",
+        "sino_korean_numbers": "오십삼"
     },
     {
-        "nombre_numerique": "54",
-        "nombre_francais": "cinquante-quatre",
-        "nombre_coreen": "쉰넷",
-        "nombre_sino_coreen": "오십사"
+        "digital_numbers": "54",
+        "french_numbers": "cinquante-quatre",
+        "english_numbers": "fifty-four",
+        "korean_numbers": "쉰넷",
+        "sino_korean_numbers": "오십사"
     },
     {
-        "nombre_numerique": "55",
-        "nombre_francais": "cinquante-cinq",
-        "nombre_coreen": "쉰다섯",
-        "nombre_sino_coreen": "오십오"
+        "digital_numbers": "55",
+        "french_numbers": "cinquante-cinq",
+        "english_numbers": "fifty-five",
+        "korean_numbers": "쉰다섯",
+        "sino_korean_numbers": "오십오"
     },
     {
-        "nombre_numerique": "56",
-        "nombre_francais": "cinquante-six",
-        "nombre_coreen": "쉰여섯",
-        "nombre_sino_coreen": "오십육"
+        "digital_numbers": "56",
+        "french_numbers": "cinquante-six",
+        "english_numbers": "fifty-six",
+        "korean_numbers": "쉰여섯",
+        "sino_korean_numbers": "오십육"
     },
     {
-        "nombre_numerique": "57",
-        "nombre_francais": "cinquante-sept",
-        "nombre_coreen": "쉰일곱",
-        "nombre_sino_coreen": "오십칠"
+        "digital_numbers": "57",
+        "french_numbers": "cinquante-sept",
+        "english_numbers": "fifty-seven",
+        "korean_numbers": "쉰일곱",
+        "sino_korean_numbers": "오십칠"
     },
     {
-        "nombre_numerique": "58",
-        "nombre_francais": "cinquante-huit",
-        "nombre_coreen": "쉰여덟",
-        "nombre_sino_coreen": "오십팔"
+        "digital_numbers": "58",
+        "french_numbers": "cinquante-huit",
+        "english_numbers": "fifty-eight",
+        "korean_numbers": "쉰여덟",
+        "sino_korean_numbers": "오십팔"
     },
     {
-        "nombre_numerique": "59",
-        "nombre_francais": "cinquante-neuf",
-        "nombre_coreen": "쉰아홉",
-        "nombre_sino_coreen": "오십구"
+        "digital_numbers": "59",
+        "french_numbers": "cinquante-neuf",
+        "english_numbers": "fifty-nine",
+        "korean_numbers": "쉰아홉",
+        "sino_korean_numbers": "오십구"
     },
     {
-        "nombre_numerique": "60",
-        "nombre_francais": "soixante",
-        "nombre_coreen": "예순",
-        "nombre_sino_coreen": "육십"
+        "digital_numbers": "60",
+        "french_numbers": "soixante",
+        "english_numbers": "sixty",
+        "korean_numbers": "예순",
+        "sino_korean_numbers": "육십"
     },
     {
-        "nombre_numerique": "61",
-        "nombre_francais": "soixante et un",
-        "nombre_coreen": "예순하나",
-        "nombre_sino_coreen": "육십일"
+        "digital_numbers": "61",
+        "french_numbers": "soixante et un",
+        "english_numbers": "sixty-one",
+        "korean_numbers": "예순하나",
+        "sino_korean_numbers": "육십일"
     },
     {
-        "nombre_numerique": "62",
-        "nombre_francais": "soixante-deux",
-        "nombre_coreen": "예순둘",
-        "nombre_sino_coreen": "육십이"
+        "digital_numbers": "62",
+        "french_numbers": "soixante-deux",
+        "english_numbers": "sixty-two",
+        "korean_numbers": "예순둘",
+        "sino_korean_numbers": "육십이"
     },
     {
-        "nombre_numerique": "63",
-        "nombre_francais": "soixante-trois",
-        "nombre_coreen": "예순셋",
-        "nombre_sino_coreen": "육십삼"
+        "digital_numbers": "63",
+        "french_numbers": "soixante-trois",
+        "english_numbers": "sixty-three",
+        "korean_numbers": "예순셋",
+        "sino_korean_numbers": "육십삼"
     },
     {
-        "nombre_numerique": "64",
-        "nombre_francais": "soixante-quatre",
-        "nombre_coreen": "예순넷",
-        "nombre_sino_coreen": "육십사"
+        "digital_numbers": "64",
+        "french_numbers": "soixante-quatre",
+        "english_numbers": "sixty-four",
+        "korean_numbers": "예순넷",
+        "sino_korean_numbers": "육십사"
     },
     {
-        "nombre_numerique": "65",
-        "nombre_francais": "soixante-cinq",
-        "nombre_coreen": "예순다섯",
-        "nombre_sino_coreen": "육십오"
+        "digital_numbers": "65",
+        "french_numbers": "soixante-cinq",
+        "english_numbers": "sixty-five",
+        "korean_numbers": "예순다섯",
+        "sino_korean_numbers": "육십오"
     },
     {
-        "nombre_numerique": "66",
-        "nombre_francais": "soixante-six",
-        "nombre_coreen": "예순여섯",
-        "nombre_sino_coreen": "육십육"
+        "digital_numbers": "66",
+        "french_numbers": "soixante-six",
+        "english_numbers": "sixty-six",
+        "korean_numbers": "예순여섯",
+        "sino_korean_numbers": "육십육"
     },
     {
-        "nombre_numerique": "67",
-        "nombre_francais": "soixante-sept",
-        "nombre_coreen": "예순일곱",
-        "nombre_sino_coreen": "육십칠"
+        "digital_numbers": "67",
+        "french_numbers": "soixante-sept",
+        "english_numbers": "sixty-seven",
+        "korean_numbers": "예순일곱",
+        "sino_korean_numbers": "육십칠"
     },
     {
-        "nombre_numerique": "68",
-        "nombre_francais": "soixante-huit",
-        "nombre_coreen": "예순여덟",
-        "nombre_sino_coreen": "육십팔"
+        "digital_numbers": "68",
+        "french_numbers": "soixante-huit",
+        "english_numbers": "sixty-eight",
+        "korean_numbers": "예순여덟",
+        "sino_korean_numbers": "육십팔"
     },
     {
-        "nombre_numerique": "69",
-        "nombre_francais": "soixante-neuf",
-        "nombre_coreen": "예순아홉",
-        "nombre_sino_coreen": "육십구"
+        "digital_numbers": "69",
+        "french_numbers": "soixante-neuf",
+        "english_numbers": "sixty-nine",
+        "korean_numbers": "예순아홉",
+        "sino_korean_numbers": "육십구"
     },
     {
-        "nombre_numerique": "70",
-        "nombre_francais": "soixante-dix",
-        "nombre_coreen": "일흔",
-        "nombre_sino_coreen": "칠십"
+        "digital_numbers": "70",
+        "french_numbers": "soixante-dix",
+        "english_numbers": "seventy",
+        "korean_numbers": "일흔",
+        "sino_korean_numbers": "칠십"
     },
     {
-        "nombre_numerique": "71",
-        "nombre_francais": "soixante et onze",
-        "nombre_coreen": "일흔하나",
-        "nombre_sino_coreen": "칠십일"
+        "digital_numbers": "71",
+        "french_numbers": "soixante et onze",
+        "english_numbers": "seventy-one",
+        "korean_numbers": "일흔하나",
+        "sino_korean_numbers": "칠십일"
     },
     {
-        "nombre_numerique": "72",
-        "nombre_francais": "soixante-douze",
-        "nombre_coreen": "일흔둘",
-        "nombre_sino_coreen": "칠십이"
+        "digital_numbers": "72",
+        "french_numbers": "soixante-douze",
+        "english_numbers": "seventy-two",
+        "korean_numbers": "일흔둘",
+        "sino_korean_numbers": "칠십이"
     },
     {
-        "nombre_numerique": "73",
-        "nombre_francais": "soixante-treize",
-        "nombre_coreen": "일흔셋",
-        "nombre_sino_coreen": "칠십삼"
+        "digital_numbers": "73",
+        "french_numbers": "soixante-treize",
+        "english_numbers": "seventy-three",
+        "korean_numbers": "일흔셋",
+        "sino_korean_numbers": "칠십삼"
     },
     {
-        "nombre_numerique": "74",
-        "nombre_francais": "soixante-quatorze",
-        "nombre_coreen": "일흔넷",
-        "nombre_sino_coreen": "칠십사"
+        "digital_numbers": "74",
+        "french_numbers": "soixante-quatorze",
+        "english_numbers": "seventy-four",
+        "korean_numbers": "일흔넷",
+        "sino_korean_numbers": "칠십사"
     },
     {
-        "nombre_numerique": "75",
-        "nombre_francais": "soixante-quinze",
-        "nombre_coreen": "일흔다섯",
-        "nombre_sino_coreen": "칠십오"
+        "digital_numbers": "75",
+        "french_numbers": "soixante-quinze",
+        "english_numbers": "seventy-five",
+        "korean_numbers": "일흔다섯",
+        "sino_korean_numbers": "칠십오"
     },
     {
-        "nombre_numerique": "76",
-        "nombre_francais": "soixante-seize",
-        "nombre_coreen": "일흔여섯",
-        "nombre_sino_coreen": "칠십육"
+        "digital_numbers": "76",
+        "french_numbers": "soixante-seize",
+        "english_numbers": "seventy-six",
+        "korean_numbers": "일흔여섯",
+        "sino_korean_numbers": "칠십육"
     },
     {
-        "nombre_numerique": "77",
-        "nombre_francais": "soixante-dix-sept",
-        "nombre_coreen": "일흔일곱",
-        "nombre_sino_coreen": "칠십칠"
+        "digital_numbers": "77",
+        "french_numbers": "soixante-dix-sept",
+        "english_numbers": "seventy-seven",
+        "korean_numbers": "일흔일곱",
+        "sino_korean_numbers": "칠십칠"
     },
     {
-        "nombre_numerique": "78",
-        "nombre_francais": "soixante-dix-huit",
-        "nombre_coreen": "일흔여덟",
-        "nombre_sino_coreen": "칠십팔"
+        "digital_numbers": "78",
+        "french_numbers": "soixante-dix-huit",
+        "english_numbers": "seventy-eight",
+        "korean_numbers": "일흔여덟",
+        "sino_korean_numbers": "칠십팔"
     },
     {
-        "nombre_numerique": "79",
-        "nombre_francais": "soixante-dix-neuf",
-        "nombre_coreen": "일흔아홉",
-        "nombre_sino_coreen": "칠십구"
+        "digital_numbers": "79",
+        "french_numbers": "soixante-dix-neuf",
+        "english_numbers": "seventy-nine",
+        "korean_numbers": "일흔아홉",
+        "sino_korean_numbers": "칠십구"
     },
     {
-        "nombre_numerique": "80",
-        "nombre_francais": "quatre-vingts",
-        "nombre_coreen": "여든",
-        "nombre_sino_coreen": "팔십"
+        "digital_numbers": "80",
+        "french_numbers": "quatre-vingts",
+        "english_numbers": "eighty",
+        "korean_numbers": "여든",
+        "sino_korean_numbers": "팔십"
     },
     {
-        "nombre_numerique": "81",
-        "nombre_francais": "quatre-vingt-un",
-        "nombre_coreen": "여든하나",
-        "nombre_sino_coreen": "팔십일"
+        "digital_numbers": "81",
+        "french_numbers": "quatre-vingt-un",
+        "english_numbers": "eighty-one",
+        "korean_numbers": "여든하나",
+        "sino_korean_numbers": "팔십일"
     },
     {
-        "nombre_numerique": "82",
-        "nombre_francais": "quatre-vingt-deux",
-        "nombre_coreen": "여든둘",
-        "nombre_sino_coreen": "팔십이"
+        "digital_numbers": "82",
+        "french_numbers": "quatre-vingt-deux",
+        "english_numbers": "eighty-two",
+        "korean_numbers": "여든둘",
+        "sino_korean_numbers": "팔십이"
     },
     {
-        "nombre_numerique": "83",
-        "nombre_francais": "quatre-vingt-trois",
-        "nombre_coreen": "여든셋",
-        "nombre_sino_coreen": "팔십삼"
+        "digital_numbers": "83",
+        "french_numbers": "quatre-vingt-trois",
+        "english_numbers": "eighty-three",
+        "korean_numbers": "여든셋",
+        "sino_korean_numbers": "팔십삼"
     },
     {
-        "nombre_numerique": "84",
-        "nombre_francais": "quatre-vingt-quatre",
-        "nombre_coreen": "여든넷",
-        "nombre_sino_coreen": "팔십사"
+        "digital_numbers": "84",
+        "french_numbers": "quatre-vingt-quatre",
+        "english_numbers": "eighty-four",
+        "korean_numbers": "여든넷",
+        "sino_korean_numbers": "팔십사"
     },
     {
-        "nombre_numerique": "85",
-        "nombre_francais": "quatre-vingt-cinq",
-        "nombre_coreen": "여든다섯",
-        "nombre_sino_coreen": "팔십오"
+        "digital_numbers": "85",
+        "french_numbers": "quatre-vingt-cinq",
+        "english_numbers": "eighty-five",
+        "korean_numbers": "여든다섯",
+        "sino_korean_numbers": "팔십오"
     },
     {
-        "nombre_numerique": "86",
-        "nombre_francais": "quatre-vingt-six",
-        "nombre_coreen": "여든여섯",
-        "nombre_sino_coreen": "팔십육"
+        "digital_numbers": "86",
+        "french_numbers": "quatre-vingt-six",
+        "english_numbers": "eighty-six",
+        "korean_numbers": "여든여섯",
+        "sino_korean_numbers": "팔십육"
     },
     {
-        "nombre_numerique": "87",
-        "nombre_francais": "quatre-vingt-sept",
-        "nombre_coreen": "여든일곱",
-        "nombre_sino_coreen": "팔십칠"
+        "digital_numbers": "87",
+        "french_numbers": "quatre-vingt-sept",
+        "english_numbers": "eighty-seven",
+        "korean_numbers": "여든일곱",
+        "sino_korean_numbers": "팔십칠"
     },
     {
-        "nombre_numerique": "88",
-        "nombre_francais": "quatre-vingt-huit",
-        "nombre_coreen": "여든여덟",
-        "nombre_sino_coreen": "팔십팔"
+        "digital_numbers": "88",
+        "french_numbers": "quatre-vingt-huit",
+        "english_numbers": "eighty-eight",
+        "korean_numbers": "여든여덟",
+        "sino_korean_numbers": "팔십팔"
     },
     {
-        "nombre_numerique": "89",
-        "nombre_francais": "quatre-vingt-neuf",
-        "nombre_coreen": "여든아홉",
-        "nombre_sino_coreen": "팔십구"
+        "digital_numbers": "89",
+        "french_numbers": "quatre-vingt-neuf",
+        "english_numbers": "eighty-nine",
+        "korean_numbers": "여든아홉",
+        "sino_korean_numbers": "팔십구"
     },
     {
-        "nombre_numerique": "90",
-        "nombre_francais": "quatre-vingt-dix",
-        "nombre_coreen": "아흔",
-        "nombre_sino_coreen": "구십"
+        "digital_numbers": "90",
+        "french_numbers": "quatre-vingt-dix",
+        "english_numbers": "ninety",
+        "korean_numbers": "아흔",
+        "sino_korean_numbers": "구십"
     },
     {
-        "nombre_numerique": "91",
-        "nombre_francais": "quatre-vingt-onze",
-        "nombre_coreen": "아흔하나",
-        "nombre_sino_coreen": "구십일"
+        "digital_numbers": "91",
+        "french_numbers": "quatre-vingt-onze",
+        "english_numbers": "ninety-one",
+        "korean_numbers": "아흔하나",
+        "sino_korean_numbers": "구십일"
     },
     {
-        "nombre_numerique": "92",
-        "nombre_francais": "quatre-vingt-douze",
-        "nombre_coreen": "아흔둘",
-        "nombre_sino_coreen": "구십이"
+        "digital_numbers": "92",
+        "french_numbers": "quatre-vingt-douze",
+        "english_numbers": "ninety-two",
+        "korean_numbers": "아흔둘",
+        "sino_korean_numbers": "구십이"
     },
     {
-        "nombre_numerique": "93",
-        "nombre_francais": "quatre-vingt-treize",
-        "nombre_coreen": "아흔셋",
-        "nombre_sino_coreen": "구십삼"
+        "digital_numbers": "93",
+        "french_numbers": "quatre-vingt-treize",
+        "english_numbers": "ninety-three",
+        "korean_numbers": "아흔셋",
+        "sino_korean_numbers": "구십삼"
     },
     {
-        "nombre_numerique": "94",
-        "nombre_francais": "quatre-vingt-quatorze",
-        "nombre_coreen": "아흔넷",
-        "nombre_sino_coreen": "구십사"
+        "digital_numbers": "94",
+        "french_numbers": "quatre-vingt-quatorze",
+        "english_numbers": "ninety-four",
+        "korean_numbers": "아흔넷",
+        "sino_korean_numbers": "구십사"
     },
     {
-        "nombre_numerique": "95",
-        "nombre_francais": "quatre-vingt-quinze",
-        "nombre_coreen": "아흔다섯",
-        "nombre_sino_coreen": "구십오"
+        "digital_numbers": "95",
+        "french_numbers": "quatre-vingt-quinze",
+        "english_numbers": "ninety-five",
+        "korean_numbers": "아흔다섯",
+        "sino_korean_numbers": "구십오"
     },
     {
-        "nombre_numerique": "96",
-        "nombre_francais": "quatre-vingt-seize",
-        "nombre_coreen": "아흔여섯",
-        "nombre_sino_coreen": "구십육"
+        "digital_numbers": "96",
+        "french_numbers": "quatre-vingt-seize",
+        "english_numbers": "ninety-six",
+        "korean_numbers": "아흔여섯",
+        "sino_korean_numbers": "구십육"
     },
     {
-        "nombre_numerique": "97",
-        "nombre_francais": "quatre-vingt-dix-sept",
-        "nombre_coreen": "아흔일곱",
-        "nombre_sino_coreen": "구십칠"
+        "digital_numbers": "97",
+        "french_numbers": "quatre-vingt-dix-sept",
+        "english_numbers": "ninety-seven",
+        "korean_numbers": "아흔일곱",
+        "sino_korean_numbers": "구십칠"
     },
     {
-        "nombre_numerique": "98",
-        "nombre_francais": "quatre-vingt-dix-huit",
-        "nombre_coreen": "아흔여덟",
-        "nombre_sino_coreen": "구십팔"
+        "digital_numbers": "98",
+        "french_numbers": "quatre-vingt-dix-huit",
+        "english_numbers": "ninety-eight",
+        "korean_numbers": "아흔여덟",
+        "sino_korean_numbers": "구십팔"
     },
     {
-        "nombre_numerique": "99",
-        "nombre_francais": "quatre-vingt-dix-neuf",
-        "nombre_coreen": "아흔아홉",
-        "nombre_sino_coreen": "구십구"
+        "digital_numbers": "99",
+        "french_numbers": "quatre-vingt-dix-neuf",
+        "english_numbers": "ninety-nine",
+        "korean_numbers": "아흔아홉",
+        "sino_korean_numbers": "구십구"
     }
 ]
