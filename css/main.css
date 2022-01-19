@@ -14,7 +14,7 @@ main div.backgroundContainer {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: no-repeat 50% scroll url("https://images.unsplash.com/photo-1640173022647-025eaeed4cf4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0MjU0MTMzOA&ixlib=rb-1.2.1&q=80&w=1080");
+  background: no-repeat 50% scroll url("../images/initial_background.jpg");
   background-size: cover;
 }
 main div.mainElements {
@@ -27,7 +27,7 @@ main div.mainElements {
 }
 main div.mainElements h1.pageTitle {
   font-family: "Courier Prime", monospace;
-  font-size: 3rem;
+  font-size: 4.5rem;
   font-weight: bold;
   color: #f5f5f5;
   text-shadow: 0 0 30px #3283c9, 0 0 10px #3283c9;
@@ -160,7 +160,7 @@ main div.mainElements form.numberGenerator div.minAndMaxNumbers {
 }
 main div.mainElements form.numberGenerator div.minAndMaxNumbers input {
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: normal;
   color: #f5f5f5;
   text-shadow: 0 0 30px #d54c4c, 0 0 10px #d54c4c;
@@ -186,20 +186,20 @@ main div.mainElements form.numberGenerator div.minAndMaxNumbers {
 main div.mainElements form.numberGenerator div.language p,
 main div.mainElements form.numberGenerator div.minAndMaxNumbers p {
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: normal;
   color: #f5f5f5;
 }
 main div.mainElements form.numberGenerator div.language label,
 main div.mainElements form.numberGenerator div.minAndMaxNumbers label {
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: normal;
   color: #f5f5f5;
 }
 main div.mainElements form.numberGenerator button {
   font-family: "Courier Prime", monospace;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #f5f5f5;
   background-color: #d54c4c;
