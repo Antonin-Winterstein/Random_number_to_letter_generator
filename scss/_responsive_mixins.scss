@@ -1,0 +1,46 @@
+// Extra small devices
+@mixin extra_small_devices() {
+	@media screen and (max-width: 600px) {
+		@content;
+	}
+}
+
+// Small devices
+@mixin small_devices() {
+	@media screen and (min-width: 600px) {
+		@content;
+	}
+}
+
+// Medium devices
+@mixin medium_devices() {
+	@media screen and (min-width: 768px) {
+		@content;
+	}
+}
+
+// Large devices
+@mixin large_devices() {
+	@media screen and (min-width: 992px) {
+		@content;
+	}
+}
+
+// Extra large devices
+@mixin extra_large_devices() {
+	@media screen and (min-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin media_screen_min($min-width) {
+	@media screen and (min-width: $min-width) {
+		@content;
+	}
+}
+
+@mixin media_screen_max($max-width) {
+	@media screen and (max-width: $max-width) {
+		@content;
+	}
+}

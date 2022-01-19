@@ -1,0 +1,17 @@
+// Police de caractère du texte courant
+$text_font: "Noto Sans KR", sans-serif;
+
+// Police de caractère des titres, boutons
+$titles_font: "Courier Prime", monospace;
+
+@mixin font_styles(
+	$font-family,
+	$font-size: 14px,
+	$font-weight: normal,
+	$color
+) {
+	font-family: $font-family;
+	font-size: $font-size;
+	font-weight: $font-weight;
+	color: $color;
+}

@@ -7,8 +7,229 @@ html {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  font-size: 25px;
+}
+
+main div.backgroundContainer {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: no-repeat 50% scroll url("https://images.unsplash.com/photo-1640173022647-025eaeed4cf4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0MjU0MTMzOA&ixlib=rb-1.2.1&q=80&w=1080");
+  background-size: cover;
+}
+main div.mainElements {
+  position: absolute;
+  margin-top: 50vh;
+  transform: translateY(-50%);
   text-align: center;
+  right: 15%;
+  left: 15%;
+}
+main div.mainElements h1.pageTitle {
+  font-family: "Courier Prime", monospace;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #f5f5f5;
+  text-shadow: 0 0 30px #3283c9, 0 0 10px #3283c9;
+}
+main div.mainElements form.numberGenerator {
+  text-align: left;
+  margin: 0 auto;
+  display: inline-block;
+}
+main div.mainElements form.numberGenerator div.language {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+main div.mainElements form.numberGenerator div.minAndMaxNumbers {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+main div.mainElements form.numberGenerator div.language p,
+main div.mainElements form.numberGenerator div.minAndMaxNumbers p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #f5f5f5;
+}
+main div.mainElements form.numberGenerator div.language label,
+main div.mainElements form.numberGenerator div.minAndMaxNumbers label {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #f5f5f5;
+}
+main div.mainElements form.numberGenerator div.language [type=radio]:checked,
+main div.mainElements form.numberGenerator div.language [type=radio]:not(:checked),
+main div.mainElements form.numberGenerator div.minAndMaxNumbers [type=radio]:checked,
+main div.mainElements form.numberGenerator div.minAndMaxNumbers [type=radio]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+main div.mainElements form.numberGenerator div.language [type=radio]:checked + label,
+main div.mainElements form.numberGenerator div.language [type=radio]:not(:checked) + label,
+main div.mainElements form.numberGenerator div.minAndMaxNumbers [type=radio]:checked + label,
+main div.mainElements form.numberGenerator div.minAndMaxNumbers [type=radio]:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  display: inline-block;
+}
+main div.mainElements form.numberGenerator div.language [type=radio]:checked + label:before,
+main div.mainElements form.numberGenerator div.language [type=radio]:not(:checked) + label:before,
+main div.mainElements form.numberGenerator div.minAndMaxNumbers [type=radio]:checked + label:before,
+main div.mainElements form.numberGenerator div.minAndMaxNumbers [type=radio]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+main div.mainElements form.numberGenerator div.language [type=radio]:checked + label:after,
+main div.mainElements form.numberGenerator div.language [type=radio]:not(:checked) + label:after,
+main div.mainElements form.numberGenerator div.minAndMaxNumbers [type=radio]:checked + label:after,
+main div.mainElements form.numberGenerator div.minAndMaxNumbers [type=radio]:not(:checked) + label:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #d54c4c;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+main div.mainElements form.numberGenerator div.language [type=radio]:not(:checked) + label:after,
+main div.mainElements form.numberGenerator div.minAndMaxNumbers [type=radio]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+main div.mainElements form.numberGenerator div.language [type=radio]:checked + label:after,
+main div.mainElements form.numberGenerator div.minAndMaxNumbers [type=radio]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+main div.mainElements form.numberGenerator div.language [type=checkbox],
+main div.mainElements form.numberGenerator div.minAndMaxNumbers [type=checkbox] {
+  position: relative;
+  appearance: none;
+  padding-left: 28px;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 14px;
+  padding-top: 5px;
+}
+main div.mainElements form.numberGenerator div.language [type=checkbox]:before,
+main div.mainElements form.numberGenerator div.minAndMaxNumbers [type=checkbox]:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  transition: 0.2s border-color ease;
+}
+main div.mainElements form.numberGenerator div.language [type=checkbox]:after,
+main div.mainElements form.numberGenerator div.minAndMaxNumbers [type=checkbox]:after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  width: 12px;
+  height: 18px;
+  border-radius: 0;
+  transform: translate(-50%, -85%) scale(0) rotate(45deg);
+  background-color: transparent;
+  box-shadow: 4px 4px 0px 0px #d54c4c;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+main div.mainElements form.numberGenerator div.language [type=checkbox]:checked:before,
+main div.mainElements form.numberGenerator div.minAndMaxNumbers [type=checkbox]:checked:before {
+  border-color: #d54c4c;
+  transition: 0.5s border-color ease;
+}
+main div.mainElements form.numberGenerator div.language [type=checkbox]:checked:after,
+main div.mainElements form.numberGenerator div.minAndMaxNumbers [type=checkbox]:checked:after {
+  animation: toggleOnCheckbox 0.2s ease forwards;
+}
+@keyframes toggleOnCheckbox {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -85%) scale(0) rotate(45deg);
+  }
+  70% {
+    opacity: 1;
+    transform: translate(-50%, -85%) scale(0.9) rotate(45deg);
+  }
+  100% {
+    transform: translate(-50%, -85%) scale(0.8) rotate(45deg);
+  }
+}
+main div.mainElements form.numberGenerator button {
+  font-family: "Courier Prime", monospace;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f5f5f5;
+  background-color: #d54c4c;
+  border: none;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 15px;
+  display: block;
+  margin: 0 auto;
+}
+main div.mainElements form.numberGenerator button:hover {
+  background-color: #df7575;
+  transition: 0.5s background-color;
+}
+main div.mainElements div.numberResult {
+  text-align: center;
+}
+main div.mainElements div.numberResult span.numericNumber {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 8rem;
+  font-weight: bold;
+  color: #f5f5f5;
+  text-shadow: 0 0 30px #d54c4c, 0 0 10px #d54c4c;
+}
+main div.mainElements div.numberResult span.letterNumber {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 8rem;
+  font-weight: bold;
+  color: #f5f5f5;
+  text-shadow: 0 0 30px #d54c4c, 0 0 10px #d54c4c;
+}
+main div.mainElements div.numberResult span.arrow {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 8rem;
+  font-weight: bold;
+  color: #f5f5f5;
+  text-shadow: 0 0 30px #d54c4c, 0 0 10px #d54c4c;
+  margin: 0 20px;
+}
+
+#koreanNumbers,
+label[for=koreanNumbers],
+#sinoKoreanNumbers,
+label[for=sinoKoreanNumbers] {
+  display: none;
+}
+
+#korean:checked ~ #koreanNumbers,
+#korean:checked ~ label[for=koreanNumbers],
+#korean:checked ~ #sinoKoreanNumbers,
+#korean:checked ~ label[for=sinoKoreanNumbers] {
+  display: unset;
 }
 
 /*# sourceMappingURL=main.css.map */
