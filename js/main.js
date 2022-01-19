@@ -6,23 +6,25 @@ function randomNumberGenerator(minimumNumber, maximumNumber) {
 	);
 }
 
+// Sélecteurs
 const numberGenerator = document.querySelector("#numberGenerator");
 let numericNumber = document.getElementById("numericNumber");
 let letterNumber = document.getElementById("letterNumber");
 let arrow = document.getElementById("arrow");
 
+// Envoi automatique du formulaire si on appuie sur la touche "Entrée" ou "Espace"
 document.addEventListener("keyup", function (event) {
 	if (event.key === "Enter" || event.key === " ") {
 		document.getElementById("submit").click();
 	}
 });
 
+// Récupération des données du fichier json
 fetch("../data/data.json")
 	.then(function (response) {
 		return response.json();
 	})
 	.then(function (data) {
-		console.log(data);
 		// Écouteur d'événement qui écoute l'événement submit
 		numberGenerator.addEventListener("submit", function (e) {
 			e.preventDefault();
@@ -49,33 +51,41 @@ fetch("../data/data.json")
 			// Récupération du nombre aléatoire entre la valeur minimale et maximale voulue
 			let randomNumber = randomNumberGenerator(minimumNumber, maximumNumber);
 
+			// Ajout du pointeur du curseur sur le nombre en lettres
+			letterNumber.style.cursor = "pointer";
+
 			// Vérification de la langue sélectionnée pour afficher le nombre dans la bonne langue
 			if (language === "Français") {
-				// Affichage du nombre aléatoire
+				// Affichage du nombre aléatoire, de la flèche et du point d'interrogation
 				numericNumber.innerHTML = data[randomNumber].digital_numbers;
 				letterNumber.innerHTML = "?";
 				arrow.innerHTML = "→";
 
-				document.addEventListener("wheel", function () {
+				// Affichage du nombre en lettres au click sur le point d'interrogation
+				letterNumber.addEventListener("click", function () {
 					letterNumber.innerHTML = data[randomNumber].french_numbers;
+					letterNumber.style.removeProperty("cursor");
 				});
 			} else if (language === "English") {
-				// Affichage du nombre aléatoire
+				/// Affichage du nombre aléatoire, de la flèche et du point d'interrogation
 				numericNumber.innerHTML = data[randomNumber].digital_numbers;
 				letterNumber.innerHTML = "?";
 				arrow.innerHTML = "→";
 
-				document.addEventListener("wheel", function () {
+				// Affichage du nombre en lettres au click sur le point d'interrogation
+				letterNumber.addEventListener("click", function () {
 					letterNumber.innerHTML = data[randomNumber].english_numbers;
+					letterNumber.style.removeProperty("cursor");
 				});
 			} else if (language === "Korean") {
+				// Affichage du nombre aléatoire, de la flèche et du point d'interrogation
 				numericNumber.innerHTML = data[randomNumber].digital_numbers;
 				letterNumber.innerHTML = "?";
 				arrow.innerHTML = "→";
 
+				// Sélecteur des checkbox
 				let checkboxes = document.querySelectorAll("input[type=checkbox]");
 				let result = [];
-				result = [];
 				// Boucle sur toutes les checkbox
 				checkboxes.forEach((item) => {
 					// Si la checkbox est cochée, on l'ajoute au tableau
@@ -86,35 +96,51 @@ fetch("../data/data.json")
 
 				// S'il y a deux éléments dans le tableau cela veut dire que les deux checkbox ont été cochées, on affiche alors les nombres coréens et sino-coréens ensemble
 				if (result.length === 2) {
-					document.addEventListener("wheel", function () {
+					// Affichage du nombre en lettres au click sur le point d'interrogation
+					letterNumber.addEventListener("click", function () {
 						letterNumber.innerHTML =
 							data[randomNumber].korean_numbers +
 							" | " +
 							data[randomNumber].sino_korean_numbers;
+						letterNumber.style.removeProperty("cursor");
 					});
 				}
 				// Si l'élément dans le tableau correspond à la checkbox "Korean numbers" alors on affiche ces nombres
 				else if (result[0] === "Korean numbers") {
-					document.addEventListener("wheel", function () {
+					// Affichage du nombre en lettres au click sur le point d'interrogation
+					letterNumber.addEventListener("click", function () {
 						letterNumber.innerHTML = data[randomNumber].korean_numbers;
+						letterNumber.style.removeProperty("cursor");
 					});
 				}
 				// Si l'élément dans le tableau correspond à la checkbox "Sino-Korean numbers" alors on affiche ces nombres
 				else if (result[0] === "Sino-Korean numbers") {
-					document.addEventListener("wheel", function () {
+					// Affichage du nombre en lettres au click sur le point d'interrogation
+					letterNumber.addEventListener("click", function () {
 						letterNumber.innerHTML = data[randomNumber].sino_korean_numbers;
+						letterNumber.style.removeProperty("cursor");
 					});
-				} else {
+				}
+				// Si aucune case n'a été cochée, onv vide les valeurs et on affiche une erreur
+				else {
 					numericNumber.innerHTML = "";
 					letterNumber.innerHTML = "";
 					arrow.innerHTML = "";
 					alert("Please select at least one type of Korean numbers");
 				}
-			} else {
-				// Affichage du nombre aléatoire
+			}
+			// Si aucune condition n'est rencontrée, on affiche de base la version anglaise
+			else {
+				/// Affichage du nombre aléatoire, de la flèche et du point d'interrogation
 				numericNumber.innerHTML = data[randomNumber].digital_numbers;
-				letterNumber.innerHTML = data[randomNumber].english_numbers;
+				letterNumber.innerHTML = "?";
 				arrow.innerHTML = "→";
+
+				// Affichage du nombre en lettres au click sur le point d'interrogation
+				letterNumber.addEventListener("click", function () {
+					letterNumber.innerHTML = data[randomNumber].english_numbers;
+					letterNumber.style.removeProperty("cursor");
+				});
 			}
 		});
 	})
