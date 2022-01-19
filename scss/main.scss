@@ -46,26 +46,15 @@ main {
 			text-shadow: 0 0 30px $primary_blue, 0 0 10px $primary_blue;
 		}
 		form.numberGenerator {
-			text-align: left;
-			margin: 0 auto;
-			display: inline-block;
+			text-align: center;
+			margin: 20px auto 0;
+			@include media_screen_max(513.98px) {
+				display: inline-block;
+			}
 			div.language {
-				margin-top: 20px;
-				margin-bottom: 10px;
-			}
-			div.minAndMaxNumbers {
-				margin-top: 10px;
-				margin-bottom: 20px;
-			}
-			div.language,
-			div.minAndMaxNumbers {
-				p {
-					// font-family, font-size, font-weight, color
-					@include font_styles($text_font, 1.6rem, normal, $primary_white);
-				}
-				label {
-					// font-family, font-size, font-weight, color
-					@include font_styles($text_font, 1.6rem, normal, $primary_white);
+				margin-right: 15px;
+				@include media_screen_max(513.98px) {
+					margin: 0;
 				}
 				// Design des boutons radio
 				[type="radio"]:checked,
@@ -121,12 +110,11 @@ main {
 					position: relative;
 					appearance: none;
 					padding-left: 28px;
-					cursor: pointer;
-					display: inline-block;
 					margin-left: 14px;
 					padding-top: 5px;
+					cursor: pointer;
+					display: inline-block;
 
-					// circle
 					&:before {
 						content: "";
 						position: absolute;
@@ -180,6 +168,40 @@ main {
 					}
 				}
 			}
+			div.minAndMaxNumbers {
+				margin-left: 15px;
+				@include media_screen_max(513.98px) {
+					margin: 0;
+				}
+				input {
+					// font-family, font-size, font-weight, color
+					@include font_styles($text_font, 1.6rem, normal, $primary_white);
+					text-shadow: 0 0 30px $primary_red, 0 0 10px $primary_red;
+					width: 100%;
+					background: transparent;
+					height: 30px;
+					border: none;
+					border-bottom: 1px solid $primary_red;
+					border-bottom-width: medium;
+				}
+			}
+			div.language,
+			div.minAndMaxNumbers {
+				display: inline-block;
+				vertical-align: top;
+				text-align: left;
+				@include media_screen_max(513.98px) {
+					display: unset;
+				}
+				p {
+					// font-family, font-size, font-weight, color
+					@include font_styles($text_font, 1.6rem, normal, $primary_white);
+				}
+				label {
+					// font-family, font-size, font-weight, color
+					@include font_styles($text_font, 1.6rem, normal, $primary_white);
+				}
+			}
 			button {
 				// font-family, font-size, font-weight, color
 				@include font_styles($titles_font, 1.8rem, bold, $primary_white);
@@ -189,7 +211,7 @@ main {
 				border-radius: 10px;
 				padding: 5px 15px;
 				display: block;
-				margin: 0 auto;
+				margin: 20px auto 0;
 				&:hover {
 					background-color: lighten($primary_red, 10%);
 					transition: 0.5s background-color;
@@ -202,17 +224,17 @@ main {
 			span.numericNumber {
 				// font-family, font-size, font-weight, color
 				@include font_styles($text_font, 8rem, bold, $primary_white);
-				text-shadow: 0 0 30px $primary_red, 0 0 10px $primary_red;
+				text-shadow: 0 0 30px $primary_blue, 0 0 10px $primary_blue;
 			}
 			span.letterNumber {
 				// font-family, font-size, font-weight, color
 				@include font_styles($text_font, 8rem, bold, $primary_white);
-				text-shadow: 0 0 30px $primary_red, 0 0 10px $primary_red;
+				text-shadow: 0 0 30px $primary_blue, 0 0 10px $primary_blue;
 			}
 			span.arrow {
 				// font-family, font-size, font-weight, color
 				@include font_styles($text_font, 8rem, bold, $primary_white);
-				text-shadow: 0 0 30px $primary_red, 0 0 10px $primary_red;
+				text-shadow: 0 0 30px $primary_blue, 0 0 10px $primary_blue;
 				margin: 0 20px;
 			}
 		}

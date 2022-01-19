@@ -3,8 +3,8 @@
         "digital_numbers": "0",
         "french_numbers": "zéro",
         "english_numbers": "zero",
-        "korean_numbers": "영/공",
-        "sino_korean_numbers": ""
+        "korean_numbers": "doesn't exist",
+        "sino_korean_numbers": "영 or 공"
     },
     {
         "digital_numbers": "1",

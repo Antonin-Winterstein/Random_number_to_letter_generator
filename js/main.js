@@ -50,15 +50,24 @@ fetch("../data/data.json")
 			if (language === "Français") {
 				// Affichage du nombre aléatoire
 				numericNumber.innerHTML = data[randomNumber].digital_numbers;
-				letterNumber.innerHTML = data[randomNumber].french_numbers;
+				letterNumber.innerHTML = "?";
 				arrow.innerHTML = "→";
+
+				document.addEventListener("wheel", function () {
+					letterNumber.innerHTML = data[randomNumber].french_numbers;
+				});
 			} else if (language === "English") {
 				// Affichage du nombre aléatoire
 				numericNumber.innerHTML = data[randomNumber].digital_numbers;
-				letterNumber.innerHTML = data[randomNumber].english_numbers;
+				letterNumber.innerHTML = "?";
 				arrow.innerHTML = "→";
+
+				document.addEventListener("wheel", function () {
+					letterNumber.innerHTML = data[randomNumber].english_numbers;
+				});
 			} else if (language === "Korean") {
 				numericNumber.innerHTML = data[randomNumber].digital_numbers;
+				letterNumber.innerHTML = "?";
 				arrow.innerHTML = "→";
 
 				let checkboxes = document.querySelectorAll("input[type=checkbox]");
@@ -74,18 +83,24 @@ fetch("../data/data.json")
 
 				// S'il y a deux éléments dans le tableau cela veut dire que les deux checkbox ont été cochées, on affiche alors les nombres coréens et sino-coréens ensemble
 				if (result.length === 2) {
-					letterNumber.innerHTML =
-						data[randomNumber].korean_numbers +
-						" | " +
-						data[randomNumber].sino_korean_numbers;
+					document.addEventListener("wheel", function () {
+						letterNumber.innerHTML =
+							data[randomNumber].korean_numbers +
+							" | " +
+							data[randomNumber].sino_korean_numbers;
+					});
 				}
 				// Si l'élément dans le tableau correspond à la checkbox "Korean numbers" alors on affiche ces nombres
 				else if (result[0] === "Korean numbers") {
-					letterNumber.innerHTML = data[randomNumber].korean_numbers;
+					document.addEventListener("wheel", function () {
+						letterNumber.innerHTML = data[randomNumber].korean_numbers;
+					});
 				}
 				// Si l'élément dans le tableau correspond à la checkbox "Sino-Korean numbers" alors on affiche ces nombres
 				else if (result[0] === "Sino-Korean numbers") {
-					letterNumber.innerHTML = data[randomNumber].sino_korean_numbers;
+					document.addEventListener("wheel", function () {
+						letterNumber.innerHTML = data[randomNumber].sino_korean_numbers;
+					});
 				} else {
 					numericNumber.innerHTML = "";
 					letterNumber.innerHTML = "";
