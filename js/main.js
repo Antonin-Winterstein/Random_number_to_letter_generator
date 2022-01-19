@@ -1,5 +1,3 @@
-// import { isCheckboxSelected } from "./utils/tools.js";
-
 // Fonction pour retourner un chiffre aléatoire entre la valeur minimale et maximale récupérées en paramètres
 function randomNumberGenerator(minimumNumber, maximumNumber) {
 	return (
@@ -13,13 +11,18 @@ let numericNumber = document.getElementById("numericNumber");
 let letterNumber = document.getElementById("letterNumber");
 let arrow = document.getElementById("arrow");
 
+document.addEventListener("keyup", function (event) {
+	if (event.key === "Enter" || event.key === " ") {
+		document.getElementById("submit").click();
+	}
+});
+
 fetch("../data/data.json")
 	.then(function (response) {
 		return response.json();
 	})
 	.then(function (data) {
 		console.log(data);
-
 		// Écouteur d'événement qui écoute l'événement submit
 		numberGenerator.addEventListener("submit", function (e) {
 			e.preventDefault();
