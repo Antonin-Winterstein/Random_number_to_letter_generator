@@ -10,7 +10,6 @@ function randomNumberGenerator(minimumNumber, maximumNumber) {
 const numberGenerator = document.querySelector("#numberGenerator");
 let numericNumber = document.getElementById("numericNumber");
 let letterNumber = document.getElementById("letterNumber");
-let arrow = document.getElementById("arrow");
 
 // Envoi automatique du formulaire si on appuie sur la touche "Entrée" ou "Espace"
 document.addEventListener("keyup", function (event) {
@@ -57,9 +56,8 @@ fetch("../data/data.json")
 			// Vérification de la langue sélectionnée pour afficher le nombre dans la bonne langue
 			if (language === "Français") {
 				// Affichage du nombre aléatoire, de la flèche et du point d'interrogation
-				numericNumber.innerHTML = data[randomNumber].digital_numbers;
+				numericNumber.innerHTML = data[randomNumber].digital_numbers + " = ";
 				letterNumber.innerHTML = "?";
-				arrow.innerHTML = "→";
 
 				// Affichage du nombre en lettres au click sur le point d'interrogation
 				letterNumber.addEventListener("click", function () {
@@ -68,9 +66,8 @@ fetch("../data/data.json")
 				});
 			} else if (language === "English") {
 				/// Affichage du nombre aléatoire, de la flèche et du point d'interrogation
-				numericNumber.innerHTML = data[randomNumber].digital_numbers;
+				numericNumber.innerHTML = data[randomNumber].digital_numbers + " = ";
 				letterNumber.innerHTML = "?";
-				arrow.innerHTML = "→";
 
 				// Affichage du nombre en lettres au click sur le point d'interrogation
 				letterNumber.addEventListener("click", function () {
@@ -79,9 +76,8 @@ fetch("../data/data.json")
 				});
 			} else if (language === "Korean") {
 				// Affichage du nombre aléatoire, de la flèche et du point d'interrogation
-				numericNumber.innerHTML = data[randomNumber].digital_numbers;
+				numericNumber.innerHTML = data[randomNumber].digital_numbers + " = ";
 				letterNumber.innerHTML = "?";
-				arrow.innerHTML = "→";
 
 				// Sélecteur des checkbox
 				let checkboxes = document.querySelectorAll("input[type=checkbox]");
@@ -125,16 +121,14 @@ fetch("../data/data.json")
 				else {
 					numericNumber.innerHTML = "";
 					letterNumber.innerHTML = "";
-					arrow.innerHTML = "";
 					alert("Please select at least one type of Korean numbers");
 				}
 			}
 			// Si aucune condition n'est rencontrée, on affiche de base la version anglaise
 			else {
 				/// Affichage du nombre aléatoire, de la flèche et du point d'interrogation
-				numericNumber.innerHTML = data[randomNumber].digital_numbers;
+				numericNumber.innerHTML = data[randomNumber].digital_numbers + " = ";
 				letterNumber.innerHTML = "?";
-				arrow.innerHTML = "→";
 
 				// Affichage du nombre en lettres au click sur le point d'interrogation
 				letterNumber.addEventListener("click", function () {

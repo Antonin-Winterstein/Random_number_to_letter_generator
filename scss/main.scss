@@ -43,16 +43,22 @@ main {
 			// font-family, font-size, font-weight, color
 			@include font_styles($titles_font, 4.5rem, bold, $primary_white);
 			text-shadow: 0 0 30px $primary_blue, 0 0 10px $primary_blue;
+			@include media_screen_max(600px) {
+				font-size: 3.2rem;
+			}
+			@include media_screen_max(380px) {
+				font-size: 2.5rem;
+			}
 		}
 		form.numberGenerator {
 			text-align: center;
 			margin: 20px auto 0;
-			@include media_screen_max(513.98px) {
+			@include media_screen_max(600px) {
 				display: inline-block;
 			}
 			div.language {
 				margin-right: 15px;
-				@include media_screen_max(513.98px) {
+				@include media_screen_max(600px) {
 					margin: 0;
 				}
 				// Design des boutons radio
@@ -169,7 +175,7 @@ main {
 			}
 			div.minAndMaxNumbers {
 				margin-left: 15px;
-				@include media_screen_max(513.98px) {
+				@include media_screen_max(600px) {
 					margin: 0;
 				}
 				input {
@@ -189,7 +195,7 @@ main {
 				display: inline-block;
 				vertical-align: top;
 				text-align: left;
-				@include media_screen_max(513.98px) {
+				@include media_screen_max(600px) {
 					display: unset;
 				}
 				p {
@@ -220,21 +226,20 @@ main {
 		div.numberResult {
 			text-align: center;
 
-			span.numericNumber {
-				// font-family, font-size, font-weight, color
-				@include font_styles($text_font, 8rem, bold, $primary_white);
-				text-shadow: 0 0 30px $primary_blue, 0 0 10px $primary_blue;
-			}
+			span.numericNumber,
 			span.letterNumber {
 				// font-family, font-size, font-weight, color
 				@include font_styles($text_font, 8rem, bold, $primary_white);
 				text-shadow: 0 0 30px $primary_blue, 0 0 10px $primary_blue;
-			}
-			span.arrow {
-				// font-family, font-size, font-weight, color
-				@include font_styles($text_font, 8rem, bold, $primary_white);
-				text-shadow: 0 0 30px $primary_blue, 0 0 10px $primary_blue;
-				margin: 0 20px;
+				@include media_screen_max(992px) {
+					font-size: 6rem;
+				}
+				@include media_screen_max(600px) {
+					font-size: 4rem;
+				}
+				@include media_screen_max(380px) {
+					font-size: 3rem;
+				}
 			}
 		}
 	}

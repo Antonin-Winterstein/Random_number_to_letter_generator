@@ -33,11 +33,21 @@ main div.mainElements h1.pageTitle {
   color: #f5f5f5;
   text-shadow: 0 0 30px #3283c9, 0 0 10px #3283c9;
 }
+@media screen and (max-width: 600px) {
+  main div.mainElements h1.pageTitle {
+    font-size: 3.2rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  main div.mainElements h1.pageTitle {
+    font-size: 2.5rem;
+  }
+}
 main div.mainElements form.numberGenerator {
   text-align: center;
   margin: 20px auto 0;
 }
-@media screen and (max-width: 513.98px) {
+@media screen and (max-width: 600px) {
   main div.mainElements form.numberGenerator {
     display: inline-block;
   }
@@ -45,7 +55,7 @@ main div.mainElements form.numberGenerator {
 main div.mainElements form.numberGenerator div.language {
   margin-right: 15px;
 }
-@media screen and (max-width: 513.98px) {
+@media screen and (max-width: 600px) {
   main div.mainElements form.numberGenerator div.language {
     margin: 0;
   }
@@ -154,7 +164,7 @@ main div.mainElements form.numberGenerator div.language [type=checkbox]:checked:
 main div.mainElements form.numberGenerator div.minAndMaxNumbers {
   margin-left: 15px;
 }
-@media screen and (max-width: 513.98px) {
+@media screen and (max-width: 600px) {
   main div.mainElements form.numberGenerator div.minAndMaxNumbers {
     margin: 0;
   }
@@ -178,7 +188,7 @@ main div.mainElements form.numberGenerator div.minAndMaxNumbers {
   vertical-align: top;
   text-align: left;
 }
-@media screen and (max-width: 513.98px) {
+@media screen and (max-width: 600px) {
   main div.mainElements form.numberGenerator div.language,
 main div.mainElements form.numberGenerator div.minAndMaxNumbers {
     display: unset;
@@ -218,13 +228,7 @@ main div.mainElements form.numberGenerator button:hover {
 main div.mainElements div.numberResult {
   text-align: center;
 }
-main div.mainElements div.numberResult span.numericNumber {
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 8rem;
-  font-weight: bold;
-  color: #f5f5f5;
-  text-shadow: 0 0 30px #3283c9, 0 0 10px #3283c9;
-}
+main div.mainElements div.numberResult span.numericNumber,
 main div.mainElements div.numberResult span.letterNumber {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 8rem;
@@ -232,13 +236,23 @@ main div.mainElements div.numberResult span.letterNumber {
   color: #f5f5f5;
   text-shadow: 0 0 30px #3283c9, 0 0 10px #3283c9;
 }
-main div.mainElements div.numberResult span.arrow {
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 8rem;
-  font-weight: bold;
-  color: #f5f5f5;
-  text-shadow: 0 0 30px #3283c9, 0 0 10px #3283c9;
-  margin: 0 20px;
+@media screen and (max-width: 992px) {
+  main div.mainElements div.numberResult span.numericNumber,
+main div.mainElements div.numberResult span.letterNumber {
+    font-size: 6rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  main div.mainElements div.numberResult span.numericNumber,
+main div.mainElements div.numberResult span.letterNumber {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  main div.mainElements div.numberResult span.numericNumber,
+main div.mainElements div.numberResult span.letterNumber {
+    font-size: 3rem;
+  }
 }
 
 #koreanNumbers,
