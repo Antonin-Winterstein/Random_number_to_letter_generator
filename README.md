@@ -2,7 +2,7 @@
 
 Ce générateur de nombre aléatoire a été pensé pour les personnes désirant apprendre les nombres d'une langue étrangère plus facilement.
 
-Comment l'utiliser :
+<b>Comment l'utiliser :</b>
 
 - Sélectionner la langue voulue (actuellement seulement Français, Anglais et Coréen)
 - Sélectionner l'intervalle voulu en définissant une valeur minimale et maximale allant de 0 à 99 (les valeurs négatives ne fonctionnent pas)
