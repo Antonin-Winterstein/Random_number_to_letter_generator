@@ -6,7 +6,7 @@ var maxImage = 3;
 setInterval(function () {
 	// Chargement de l'image suivante
 	document.querySelector(".backgroundContainer").style.backgroundImage =
-		"url('images/" + "background_" + (counter + 1) + ".jpg')";
+		"url('images/backgrounds/" + "background_" + (counter + 1) + ".jpg')";
 	// Retour à la première image si on atteint la dernière
 	if (counter + 1 == maxImage) {
 		counter = 0;

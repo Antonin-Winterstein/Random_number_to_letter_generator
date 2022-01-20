@@ -8,7 +8,12 @@
 
 html {
 	font-size: 62.5%;
-	background-color: #fafafa;
+	background-color: $primary_white;
+}
+
+html,
+body {
+	overflow: hidden;
 }
 
 * {
@@ -25,9 +30,254 @@ main {
 		width: 100%;
 		height: 100vh;
 		overflow: hidden;
-		background: no-repeat 50% scroll url("../images/background_1.jpg");
+		background: no-repeat 50% scroll
+			url("../images/backgrounds/background_1.jpg");
 		background-size: cover;
 		transition: background 0.5s linear;
+	}
+
+	// Le bouton pour afficher la modal des instructions
+	div.buttonInstructions {
+		position: absolute;
+		button {
+			// font-family, font-size, font-weight, color
+			@include font_styles($titles_font, 2rem, bold, $primary_white);
+			cursor: pointer;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			background-color: $primary_red;
+			// border: 2px solid $primary_red;
+			border: none;
+			border-radius: 50px;
+			padding: 7px 15px;
+			margin: 10px 0 0 10px;
+
+			@include media_screen_max(380px) {
+				font-size: 1.5rem;
+			}
+
+			&:hover {
+				background-color: lighten($primary_red, 10%);
+				transition: 0.5s background-color;
+			}
+
+			svg.buttonIcon {
+				width: 2rem;
+				height: 2rem;
+				fill: $primary_white;
+				margin-right: 0.5em;
+
+				@include media_screen_max(380px) {
+					width: 1.5rem;
+					height: 1.5rem;
+				}
+			}
+			span {
+				margin-top: 3px;
+			}
+		}
+	}
+
+	// La modal
+	div.instructionsModal {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		// padding-top: 100px;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		overflow: hidden;
+
+		div.modalDialog {
+			position: relative;
+			width: auto;
+			max-width: 950px;
+			margin: 30px auto;
+
+			@include media_screen_max(992px) {
+				margin: 30px 10px;
+			}
+
+			div.modalContent {
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				pointer-events: auto;
+				background-clip: padding-box;
+				border: 1px solid rgba(0, 0, 0, 0.2);
+				border-radius: 8px;
+				background-color: $primary_white;
+
+				div.modalHeader {
+					display: flex;
+					align-items: flex-start;
+					justify-content: space-between;
+					padding: 22px 1.5rem 1.5rem;
+					border-bottom: 1px solid #e9ecef;
+					background: no-repeat 50% scroll
+						url("../images/backgrounds/background_modal.jpg");
+					background-size: cover;
+
+					h2 {
+						// font-family, font-size, font-weight, color
+						@include font_styles($titles_font, 4.5rem, bold, $primary_white);
+						text-shadow: 0 0 30px $primary_blue, 0 0 10px $primary_blue;
+
+						@include media_screen_max(600px) {
+							font-size: 3.5rem;
+						}
+						@include media_screen_max(380px) {
+							font-size: 2.5rem;
+						}
+					}
+
+					span.closeButton {
+						// font-family, font-size, font-weight, color
+						@include font_styles($titles_font, 4.5rem, bold, $primary_black);
+						float: right;
+						line-height: 1;
+						opacity: 0.75;
+						padding: 13px 1rem 1rem;
+						margin: -1rem -1rem -1rem auto;
+
+						@include media_screen_max(600px) {
+							font-size: 3.5rem;
+						}
+						@include media_screen_max(380px) {
+							font-size: 2.5rem;
+						}
+					}
+
+					span.closeButton:hover,
+					span.closeButton:focus {
+						text-decoration: none;
+						cursor: pointer;
+						opacity: 1;
+					}
+				}
+
+				.modalBody {
+					position: relative;
+					flex: 1 1 auto;
+					padding: 1.5rem;
+					p {
+						// font-family, font-size, font-weight, color
+						@include font_styles($text_font, 2rem, normal, $primary_black);
+						margin-bottom: 20px;
+						@include media_screen_max(600px) {
+							font-size: 1.5rem;
+						}
+						@include media_screen_max(380px) {
+							font-size: 1.2rem;
+						}
+
+						mark {
+							margin: 0 -0.4em;
+							padding: 0.1em 0.4em;
+							border-radius: 0.8em 0.3em;
+							background: transparent;
+							background-image: linear-gradient(
+								to right,
+								rgba(213, 76, 76, 0.1),
+								rgba(213, 76, 76, 0.7) 4%,
+								rgba(213, 76, 76, 0.3)
+							);
+							-webkit-box-decoration-break: clone;
+							box-decoration-break: clone;
+						}
+					}
+
+					ol {
+						margin: 0 0 0 3.5rem;
+						padding: 0;
+						display: grid;
+						grid-gap: 1.5rem;
+						@include media_screen_max(380px) {
+							margin: 0 0 0 2rem;
+						}
+						li {
+							// font-family, font-size, font-weight, color
+							@include font_styles($text_font, 2rem, normal, $primary_black);
+							padding-left: 12px;
+
+							@include media_screen_max(600px) {
+								font-size: 1.5rem;
+							}
+							@include media_screen_max(380px) {
+								font-size: 1.2rem;
+							}
+
+							&::marker {
+								// font-family, font-size, font-weight, color
+								@include font_styles(
+									$titles_font,
+									3rem,
+									normal,
+									$primary_black
+								);
+								content: counter(list-item) ".";
+								letter-spacing: -5px;
+
+								@include media_screen_max(600px) {
+									font-size: 2.5rem;
+								}
+								@include media_screen_max(380px) {
+									font-size: 2rem;
+								}
+							}
+						}
+						// Effet de surlignage
+						li:before {
+							content: "";
+							position: absolute;
+							left: 21px;
+							z-index: 1;
+							width: 20px;
+							height: 27px;
+
+							margin: 0 -0.4em;
+							padding: 0.1em 0.4em;
+							border-radius: 15px 5px 15px 12px;
+							background: transparent;
+							background-image: linear-gradient(
+								to right,
+								rgba(213, 76, 76, 0.1),
+								rgba(213, 76, 76, 0.7) 4%,
+								rgba(213, 76, 76, 0.3)
+							);
+							-webkit-box-decoration-break: clone;
+							box-decoration-break: clone;
+
+							@include media_screen_max(600px) {
+								margin: -3px -0.4em 0;
+								width: 18px;
+								height: 24px;
+								left: 25px;
+							}
+							@include media_screen_max(380px) {
+								width: 15px;
+								height: 22px;
+								left: 16px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Fondu d'entrée et de sortie
+	div.fadeIn {
+		-webkit-animation: fadeIn 0.2s linear;
+		animation: fadeIn 0.2s linear;
+	}
+	div.fadeOut {
+		-webkit-animation: fadeOut 0.2s linear;
+		animation: fadeOut 0.2s linear;
 	}
 
 	// Tous les éléments principaux de la page
@@ -156,22 +406,6 @@ main {
 						animation: toggleOnCheckbox 0.2s ease forwards;
 					}
 				}
-
-				@keyframes toggleOnCheckbox {
-					0% {
-						opacity: 0;
-						transform: translate(-50%, -85%) scale(0) rotate(45deg);
-					}
-
-					70% {
-						opacity: 1;
-						transform: translate(-50%, -85%) scale(0.9) rotate(45deg);
-					}
-
-					100% {
-						transform: translate(-50%, -85%) scale(0.8) rotate(45deg);
-					}
-				}
 			}
 			div.minAndMaxNumbers {
 				margin-left: 15px;
@@ -188,6 +422,10 @@ main {
 					border: none;
 					border-bottom: 1px solid $primary_red;
 					border-bottom-width: medium;
+
+					@include media_screen_max(380px) {
+						font-size: 1.5rem;
+					}
 				}
 			}
 			div.language,
@@ -195,21 +433,31 @@ main {
 				display: inline-block;
 				vertical-align: top;
 				text-align: left;
+
 				@include media_screen_max(600px) {
 					display: unset;
 				}
 				p {
 					// font-family, font-size, font-weight, color
 					@include font_styles($text_font, 2rem, normal, $primary_white);
+
+					@include media_screen_max(380px) {
+						font-size: 1.5rem;
+					}
 				}
 				label {
 					// font-family, font-size, font-weight, color
 					@include font_styles($text_font, 2rem, normal, $primary_white);
+
+					@include media_screen_max(380px) {
+						font-size: 1.5rem;
+					}
 				}
 			}
 			button {
 				// font-family, font-size, font-weight, color
 				@include font_styles($titles_font, 2.5rem, bold, $primary_white);
+				cursor: pointer;
 				background-color: $primary_red;
 				border: none;
 				text-align: center;
@@ -217,6 +465,11 @@ main {
 				padding: 7px 15px 5px;
 				display: block;
 				margin: 20px auto 0;
+
+				@include media_screen_max(380px) {
+					font-size: 1.5rem;
+				}
+
 				&:hover {
 					background-color: lighten($primary_red, 10%);
 					transition: 0.5s background-color;
@@ -238,7 +491,7 @@ main {
 					font-size: 4rem;
 				}
 				@include media_screen_max(380px) {
-					font-size: 3rem;
+					font-size: 2.5rem;
 				}
 			}
 		}
@@ -258,4 +511,66 @@ label[for="sinoKoreanNumbers"] {
 #korean:checked ~ #sinoKoreanNumbers,
 #korean:checked ~ label[for="sinoKoreanNumbers"] {
 	display: unset;
+}
+
+// Animations fondu
+@-webkit-keyframes fadeIn {
+	from {
+		top: -50px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		top: -50px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeOut {
+	from {
+		top: 0;
+		opacity: 1;
+	}
+	to {
+		top: -50px;
+		opacity: 0;
+	}
+}
+
+@keyframes fadeOut {
+	from {
+		top: 0;
+		opacity: 1;
+	}
+	to {
+		top: -50px;
+		opacity: 0;
+	}
+}
+
+// Animation checkbox
+@keyframes toggleOnCheckbox {
+	0% {
+		opacity: 0;
+		transform: translate(-50%, -85%) scale(0) rotate(45deg);
+	}
+
+	70% {
+		opacity: 1;
+		transform: translate(-50%, -85%) scale(0.9) rotate(45deg);
+	}
+
+	100% {
+		transform: translate(-50%, -85%) scale(0.8) rotate(45deg);
+	}
 }

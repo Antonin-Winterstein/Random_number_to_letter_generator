@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Korean number generation</title>
+		<title>Random Number Generator</title>
 		<style>
 			@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap");
 		</style>
@@ -13,14 +13,73 @@
 	<body>
 		<!-- Main -->
 		<main>
+			<!-- Image de fond et particules -->
 			<div class="backgroundContainer">
 				<div id="particle-box"></div>
 			</div>
-			<div class="mainElements">
-				<h1 class="pageTitle">
-					Random number generator with the word in letters
-				</h1>
+			<!-- Bouton pour afficher la modal des instructions -->
+			<div class="buttonInstructions">
+				<button id="buttonInstructions">
+					<svg
+						class="buttonIcon"
+						fill="#0a0a0a"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 50 50"
+						aria-hidden="true"
+						focusable="false"
+					>
+						<path
+							d="M25,2C12.297,2,2,12.297,2,25s10.297,23,23,23s23-10.297,23-23S37.703,2,25,2z M25,11c1.657,0,3,1.343,3,3s-1.343,3-3,3 s-3-1.343-3-3S23.343,11,25,11z M29,38h-2h-4h-2v-2h2V23h-2v-2h2h4v2v13h2V38z"
+						/>
+					</svg>
+					<span>INSTRUCTIONS</span>
+				</button>
+			</div>
 
+			<!-- La modal -->
+			<div id="instructionsModal" class="instructionsModal">
+				<div class="modalDialog">
+					<!-- Contenu de la modal -->
+					<div class="modalContent">
+						<div class="modalHeader">
+							<h2>INSTRUCTIONS</h2>
+							<span class="closeButton" aria-hidden="true">×</span>
+						</div>
+						<div class="modalBody">
+							<p>
+								This random number generator has been designed for people who
+								want to learn numbers of a foreign language more easily.
+							</p>
+							<p><mark>How to use it :</mark></p>
+							<ol>
+								<li>
+									Select the desired language (currently only French, English
+									and Korean)
+								</li>
+								<li>
+									Select the desired interval by setting a minimum and maximum
+									value ranging from 0 to 99 (negative values do not work)
+								</li>
+								<li>
+									Click on the "Generate" button to generate a random number
+									between your interval, you can also press your Enter key or
+									space bar to do that
+								</li>
+								<li>
+									Click on the question mark to display the writing of this
+									number in the chosen language
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Éléments principaux de la page -->
+			<div class="mainElements">
+				<h1 class="pageTitle">RANDOM NUMBER GENERATOR</h1>
+
+				<!-- Formulaire d'envoi de la langue, du nombre minimum et maximum -->
 				<form
 					name="numberGenerator"
 					id="numberGenerator"
@@ -114,6 +173,7 @@
 					<button type="submit" id="submit">Generate</button>
 				</form>
 
+				<!-- Affichage du nombre aléatoire -->
 				<div class="numberResult">
 					<span id="numericNumber" class="numericNumber"></span>
 					<span id="letterNumber" class="letterNumber"></span>
@@ -121,6 +181,7 @@
 			</div>
 		</main>
 		<script src="./js/changeBackgroundImage.js"></script>
+		<script src="./js/openModal.js"></script>
 		<script src="./js/particles.min.js"></script>
 		<script src="./js/particles.js"></script>
 		<script src="./js/main.js" type="module"></script>
