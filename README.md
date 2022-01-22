@@ -1,4 +1,4 @@
-# Générateur de nombre aléatoire en lettres
+# Générateur de nombre en lettres aléatoire
 
 Ce générateur de nombre aléatoire a été pensé pour les personnes désirant apprendre les nombres d'une langue étrangère plus facilement ou pour simplement vérifier l'orthographe d'un nombre.
 
