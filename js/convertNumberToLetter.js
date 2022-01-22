@@ -481,5 +481,3 @@ export function convertNumberToLetter(number, language) {
 			break;
 	}
 }
-
-console.log(convertNumberToLetter(907635, "Sino-Korean numbers"));

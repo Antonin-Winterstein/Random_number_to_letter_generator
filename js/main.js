@@ -1,3 +1,4 @@
+// Import des fonctions pour convertir les nombres en lettres et pour générer aléatoiremet un nombre
 import { convertNumberToLetter } from "./convertNumberToLetter.js";
 import { randomNumberGenerator } from "./randomNumberGenerator.js";
 
@@ -13,126 +14,131 @@ document.addEventListener("keyup", function (event) {
 	}
 });
 
-// Récupération des données du fichier json
-fetch("../data/data.json")
-	.then(function (response) {
-		return response.json();
-	})
-	.then(function (data) {
-		// Écouteur d'événement qui écoute l'événement submit
-		numberGenerator.addEventListener("submit", function (e) {
-			e.preventDefault();
+// Écouteur d'événement qui écoute l'événement submit
+numberGenerator.addEventListener("submit", function (e) {
+	e.preventDefault();
 
-			// Les valeurs dans le formulaire
-			let language = document.querySelector(
-				'input[name="language"]:checked'
-			).value;
-			let minimumNumber =
-				document.getElementById("minimumNumber").valueAsNumber;
-			let maximumNumber =
-				document.getElementById("maximumNumber").valueAsNumber;
+	// Les valeurs dans le formulaire
+	let language = document.querySelector('input[name="language"]:checked').value;
+	let koreanNumbers = document.getElementById("koreanNumbers").checked;
+	let sinoKoreanNumbers = document.getElementById("sinoKoreanNumbers").checked;
+	let minimumNumber = document.getElementById("minimumNumber").valueAsNumber;
+	let maximumNumber = document.getElementById("maximumNumber").valueAsNumber;
 
-			// Condition pour savoir si la valeur minimale est supérieure à la valeur maximale
-			if (minimumNumber > maximumNumber) {
-				// Si la condition est valide, on intervertit les valeurs dans les champs du formulaire
-				document.getElementById("minimumNumber").valueAsNumber = maximumNumber;
-				document.getElementById("maximumNumber").valueAsNumber = minimumNumber;
-				// Et on actualise les valeurs minimales et maximales
-				minimumNumber = document.getElementById("minimumNumber").valueAsNumber;
-				maximumNumber = document.getElementById("maximumNumber").valueAsNumber;
-			}
+	// Condition pour savoir si la valeur minimale est supérieure à la valeur maximale
+	if (minimumNumber > maximumNumber) {
+		// Si la condition est valide, on intervertit les valeurs dans les champs du formulaire
+		document.getElementById("minimumNumber").valueAsNumber = maximumNumber;
+		document.getElementById("maximumNumber").valueAsNumber = minimumNumber;
+		// Et on actualise les valeurs minimales et maximales
+		minimumNumber = document.getElementById("minimumNumber").valueAsNumber;
+		maximumNumber = document.getElementById("maximumNumber").valueAsNumber;
+	}
 
-			// Récupération du nombre aléatoire entre la valeur minimale et maximale voulue
-			let randomNumber = randomNumberGenerator(minimumNumber, maximumNumber);
+	// Récupération du nombre aléatoire entre la valeur minimale et maximale voulue
+	let randomNumber = randomNumberGenerator(minimumNumber, maximumNumber);
 
-			// Ajout du pointeur du curseur sur le nombre en lettres
-			letterNumber.style.cursor = "pointer";
+	// Ajout du pointeur du curseur sur le point d'interrogation
+	letterNumber.style.cursor = "pointer";
 
-			// Vérification de la langue sélectionnée pour afficher le nombre dans la bonne langue
-			if (language === "Français") {
-				// Affichage du nombre aléatoire, de la flèche et du point d'interrogation
-				numericNumber.innerHTML = data[randomNumber].digital_numbers + " = ";
-				letterNumber.innerHTML = "?";
+	// Vérification de la langue sélectionnée pour afficher le nombre dans la bonne langue
+	if (language === "Français") {
+		// Affichage du nombre aléatoire, de la flèche et du point d'interrogation
+		numericNumber.innerHTML = randomNumber + " = ";
+		letterNumber.innerHTML = "?";
 
-				// Affichage du nombre en lettres au click sur le point d'interrogation
-				letterNumber.addEventListener("click", function () {
-					letterNumber.innerHTML = data[randomNumber].french_numbers;
-					letterNumber.style.removeProperty("cursor");
-				});
-			} else if (language === "English") {
-				/// Affichage du nombre aléatoire, de la flèche et du point d'interrogation
-				numericNumber.innerHTML = data[randomNumber].digital_numbers + " = ";
-				letterNumber.innerHTML = "?";
-
-				// Affichage du nombre en lettres au click sur le point d'interrogation
-				letterNumber.addEventListener("click", function () {
-					letterNumber.innerHTML = data[randomNumber].english_numbers;
-					letterNumber.style.removeProperty("cursor");
-				});
-			} else if (language === "Korean") {
-				// Affichage du nombre aléatoire, de la flèche et du point d'interrogation
-				numericNumber.innerHTML = data[randomNumber].digital_numbers + " = ";
-				letterNumber.innerHTML = "?";
-
-				// Sélecteur des checkbox
-				let checkboxes = document.querySelectorAll("input[type=checkbox]");
-				let result = [];
-				// Boucle sur toutes les checkbox
-				checkboxes.forEach((item) => {
-					// Si la checkbox est cochée, on l'ajoute au tableau
-					if (item.checked) {
-						result.push(item.value);
-					}
-				});
-
-				// S'il y a deux éléments dans le tableau cela veut dire que les deux checkbox ont été cochées, on affiche alors les nombres coréens et sino-coréens ensemble
-				if (result.length === 2) {
-					// Affichage du nombre en lettres au click sur le point d'interrogation
-					letterNumber.addEventListener("click", function () {
-						letterNumber.innerHTML =
-							data[randomNumber].korean_numbers +
-							" | " +
-							data[randomNumber].sino_korean_numbers;
-						letterNumber.style.removeProperty("cursor");
-					});
-				}
-				// Si l'élément dans le tableau correspond à la checkbox "Korean numbers" alors on affiche ces nombres
-				else if (result[0] === "Korean numbers") {
-					// Affichage du nombre en lettres au click sur le point d'interrogation
-					letterNumber.addEventListener("click", function () {
-						letterNumber.innerHTML = data[randomNumber].korean_numbers;
-						letterNumber.style.removeProperty("cursor");
-					});
-				}
-				// Si l'élément dans le tableau correspond à la checkbox "Sino-Korean numbers" alors on affiche ces nombres
-				else if (result[0] === "Sino-Korean numbers") {
-					// Affichage du nombre en lettres au click sur le point d'interrogation
-					letterNumber.addEventListener("click", function () {
-						letterNumber.innerHTML = data[randomNumber].sino_korean_numbers;
-						letterNumber.style.removeProperty("cursor");
-					});
-				}
-				// Si aucune case n'a été cochée, onv vide les valeurs et on affiche une erreur
-				else {
-					numericNumber.innerHTML = "";
-					letterNumber.innerHTML = "";
-					alert("Please select at least one type of Korean numbers");
-				}
-			}
-			// Si aucune condition n'est rencontrée, on affiche de base la version anglaise
-			else {
-				/// Affichage du nombre aléatoire, de la flèche et du point d'interrogation
-				numericNumber.innerHTML = data[randomNumber].digital_numbers + " = ";
-				letterNumber.innerHTML = "?";
-
-				// Affichage du nombre en lettres au click sur le point d'interrogation
-				letterNumber.addEventListener("click", function () {
-					letterNumber.innerHTML = data[randomNumber].english_numbers;
-					letterNumber.style.removeProperty("cursor");
-				});
-			}
+		// Affichage du nombre en lettres au click sur le point d'interrogation
+		letterNumber.addEventListener("click", function () {
+			letterNumber.innerHTML = convertNumberToLetter(randomNumber, language);
+			letterNumber.style.removeProperty("cursor");
 		});
-	})
-	.catch(function (error) {
-		console.log(error);
-	});
+	} else if (language === "English") {
+		/// Affichage du nombre aléatoire, de la flèche et du point d'interrogation
+		numericNumber.innerHTML = randomNumber + " = ";
+		letterNumber.innerHTML = "?";
+
+		// Affichage du nombre en lettres au click sur le point d'interrogation
+		letterNumber.addEventListener("click", function () {
+			letterNumber.innerHTML = convertNumberToLetter(randomNumber, language);
+			letterNumber.style.removeProperty("cursor");
+		});
+	} else if (language === "Korean") {
+		// Affichage du nombre aléatoire, de la flèche et du point d'interrogation
+		numericNumber.innerHTML = randomNumber + " = ";
+		letterNumber.innerHTML = "?";
+
+		// Si les deux checkbox du Coréen ont été cochées, on affiche alors les nombres coréens et sino-coréens ensemble
+		if (koreanNumbers == true && sinoKoreanNumbers == true) {
+			// Si l'intervalle n'est pas entre 1 et 99, affiche une erreur car les nombres coréens ne vont pas au dessus de 99
+			if (maximumNumber > 99 || minimumNumber == 0) {
+				numericNumber.innerHTML = "";
+				letterNumber.innerHTML = "";
+				alert(
+					"Error, korean numbers are only from 1 to 99, please select another minimum and maximum value."
+				);
+			}
+			// Sinon on affiche les deux types de nombres côte à côte
+			else {
+				// Affichage du nombre en lettres au click sur le point d'interrogation
+				letterNumber.addEventListener("click", function () {
+					letterNumber.innerHTML =
+						convertNumberToLetter(randomNumber, "Korean numbers") +
+						" | " +
+						convertNumberToLetter(randomNumber, "Sino-Korean numbers");
+					letterNumber.style.removeProperty("cursor");
+				});
+			}
+		}
+		// Si la checkbox cochée est "Korean numbers" alors on affiche ces nombres
+		else if (koreanNumbers == true) {
+			// Si l'intervalle n'est pas entre 1 et 99, affiche une erreur car les nombres coréens ne vont pas au dessus de 99
+			if (maximumNumber > 99 || minimumNumber == 0) {
+				numericNumber.innerHTML = "";
+				letterNumber.innerHTML = "";
+				alert(
+					"Error, korean numbers are only from 1 to 99, please select another minimum and maximum value."
+				);
+			}
+			// Sinon on affiche les deux types de nombres côte à côte
+			else {
+				// Affichage du nombre en lettres au click sur le point d'interrogation
+				letterNumber.addEventListener("click", function () {
+					letterNumber.innerHTML = convertNumberToLetter(
+						randomNumber,
+						"Korean numbers"
+					);
+					letterNumber.style.removeProperty("cursor");
+				});
+			}
+		}
+		// Si la checkbox cochée est "Sino-Korean numbers" alors on affiche ces nombres
+		else if (sinoKoreanNumbers == true) {
+			// Affichage du nombre en lettres au click sur le point d'interrogation
+			letterNumber.addEventListener("click", function () {
+				letterNumber.innerHTML = convertNumberToLetter(
+					randomNumber,
+					"Sino-Korean numbers"
+				);
+				letterNumber.style.removeProperty("cursor");
+			});
+		}
+		// Si aucune case n'a été cochée, on vide les valeurs et on affiche une erreur
+		else {
+			numericNumber.innerHTML = "";
+			letterNumber.innerHTML = "";
+			alert("Error, please select at least one type of Korean numbers.");
+		}
+	}
+	// Si aucune condition n'est rencontrée, on affiche de base la version anglaise
+	else {
+		/// Affichage du nombre aléatoire, de la flèche et du point d'interrogation
+		numericNumber.innerHTML = randomNumber + " = ";
+		letterNumber.innerHTML = "?";
+
+		// Affichage du nombre en lettres au click sur le point d'interrogation
+		letterNumber.addEventListener("click", function () {
+			letterNumber.innerHTML = convertNumberToLetter(randomNumber, language);
+			letterNumber.style.removeProperty("cursor");
+		});
+	}
+});

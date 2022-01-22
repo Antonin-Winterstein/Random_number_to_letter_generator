@@ -275,6 +275,12 @@ main div.mainElements {
   right: 15%;
   left: 15%;
 }
+@media screen and (max-width: 600px) {
+  main div.mainElements {
+    right: unset;
+    left: unset;
+  }
+}
 main div.mainElements h1.pageTitle {
   font-family: "Courier Prime", monospace;
   font-size: 4.5rem;
@@ -487,10 +493,15 @@ main div.mainElements form.numberGenerator button:hover {
 main div.mainElements div.numberResult {
   text-align: center;
 }
+@media screen and (max-width: 600px) {
+  main div.mainElements div.numberResult {
+    margin: 0 10px;
+  }
+}
 main div.mainElements div.numberResult span.numericNumber,
 main div.mainElements div.numberResult span.letterNumber {
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 8rem;
+  font-size: 7rem;
   font-weight: bold;
   color: #f5f5f5;
   text-shadow: 0 0 30px #3283c9, 0 0 10px #3283c9;
@@ -498,13 +509,13 @@ main div.mainElements div.numberResult span.letterNumber {
 @media screen and (max-width: 992px) {
   main div.mainElements div.numberResult span.numericNumber,
 main div.mainElements div.numberResult span.letterNumber {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }
 @media screen and (max-width: 600px) {
   main div.mainElements div.numberResult span.numericNumber,
 main div.mainElements div.numberResult span.letterNumber {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 @media screen and (max-width: 380px) {

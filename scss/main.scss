@@ -292,6 +292,11 @@ main {
 		right: 15%;
 		left: 15%;
 
+		@include media_screen_max(600px) {
+			right: unset;
+			left: unset;
+		}
+
 		h1.pageTitle {
 			// font-family, font-size, font-weight, color
 			@include font_styles($titles_font, 4.5rem, bold, $primary_white);
@@ -481,17 +486,20 @@ main {
 		}
 		div.numberResult {
 			text-align: center;
+			@include media_screen_max(600px) {
+				margin: 0 10px;
+			}
 
 			span.numericNumber,
 			span.letterNumber {
 				// font-family, font-size, font-weight, color
-				@include font_styles($text_font, 8rem, bold, $primary_white);
+				@include font_styles($text_font, 7rem, bold, $primary_white);
 				text-shadow: 0 0 30px $primary_blue, 0 0 10px $primary_blue;
 				@include media_screen_max(992px) {
-					font-size: 6rem;
+					font-size: 5rem;
 				}
 				@include media_screen_max(600px) {
-					font-size: 4rem;
+					font-size: 3.5rem;
 				}
 				@include media_screen_max(380px) {
 					font-size: 2.5rem;
