@@ -1,7 +1,7 @@
 ### Random number to letter generator
 
 This random number generator has been designed for people who want to learn numbers of a foreign language more easily or simply to check the spelling of a number.
-[Demo on my website](https://antoninwinterstein.com/Random_number_to_letter_generator/).
+[See more on my website](https://antoninwinterstein.com/randomnumbertolettergenerator).
 
 <b>How to use it:</b>
 
